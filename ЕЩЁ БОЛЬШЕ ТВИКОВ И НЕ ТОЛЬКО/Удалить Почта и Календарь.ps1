@@ -1,0 +1,1 @@
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage

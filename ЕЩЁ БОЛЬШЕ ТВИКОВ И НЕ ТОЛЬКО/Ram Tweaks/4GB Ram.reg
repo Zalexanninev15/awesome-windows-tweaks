@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00																				MADE BY KONEX#8100
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control]
+"SvcHostSplitThresholdInKB"=dword:4194304
+

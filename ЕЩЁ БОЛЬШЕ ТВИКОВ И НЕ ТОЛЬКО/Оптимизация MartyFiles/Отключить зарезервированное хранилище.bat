@@ -1,0 +1,1 @@
+DISM /Online /Set-ReservedStorageState /State:Disabled

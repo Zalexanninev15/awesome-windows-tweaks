@@ -1,0 +1,1 @@
+DISM.exe /Online /Set-ReservedStorageState /State:Enabled

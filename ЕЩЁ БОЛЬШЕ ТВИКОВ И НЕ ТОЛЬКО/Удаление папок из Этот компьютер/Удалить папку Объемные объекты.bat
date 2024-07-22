@@ -1,0 +1,1 @@
+rd /s /q "%userprofile%\3D Objects\"

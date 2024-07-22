@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; от iosiph-a с любовью жи ес
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Script Host\Settings]
+"Enabled"=dword:00000001

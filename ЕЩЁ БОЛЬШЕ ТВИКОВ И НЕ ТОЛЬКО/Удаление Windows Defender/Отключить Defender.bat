@@ -1,0 +1,1 @@
+sc stop windefend & sc config windefend start=disabled

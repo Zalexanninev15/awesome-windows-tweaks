@@ -1,0 +1,257 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Python Primer &#8212; PythonScript 2.0.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notepad++ Object" href="notepad.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="notepad.html" title="Notepad++ Object"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PythonScript 2.0.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="python-primer">
+<h1>Python Primer<a class="headerlink" href="#python-primer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This is a little introduction to <a class="reference external" href="https://www.python.org/">Python</a>.  It is not meant to teach you <a class="reference external" href="https://www.python.org/">Python</a>, just give you enough syntax to write scripts for Notepad++.</p>
+</div>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<p>The key, is indentation.  That separates out the blocks of code.  Some people initially don’t like this approach, thinking it might be unclear or easy to get wrong - I did.  Now I think it’s just great :)</p>
+<p>There are no semi-colons (;) at the end of lines like in C or Java.</p>
+<p>You can define a variable simply by using it.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>To call a function, just type the name, followed by brackets, with any arguments in brackets.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="if-statements">
+<h2>If Statements<a class="headerlink" href="#if-statements" title="Permalink to this headline">¶</a></h2>
+<p>An <code class="docutils literal notranslate"><span class="pre">if</span></code> statement doesn’t need brackets around the test, just a colon (:) at the end of the line.  The colon signifies the start of a new block.  The next line must be indented more than the <code class="docutils literal notranslate"><span class="pre">if</span></code> line.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> block continues until the indentation reverts to the same indentation as the <code class="docutils literal notranslate"><span class="pre">if</span></code> line.:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Let&#39;s go&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;So x is 3 then&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;This line is also run if x is 3&quot;</span><span class="p">)</span>
+<span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;this line is run always&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>To use an else, place the else at the same level as the if, and append a colon:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;So x is 3 then&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;This line is also run if x is 3&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Guess x isn&#39;t 3 this time.&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Better luck next time&quot;</span><span class="p">)</span>
+
+<span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;this line is run always&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>If you want an “else if”, use <code class="docutils literal notranslate"><span class="pre">elif</span></code>:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;So x is 3 then&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;This line is also run if x is 3&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hey it&#39;s your lucky day, x is 6&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;x is not 3 or 6 this time.&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Better luck next time&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>To define a function, just use <code class="docutils literal notranslate"><span class="pre">def</span></code>.  Again, the indentation is important, the function definition lasts as long as the indentation stays the same:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printNameAge</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello </span><span class="si">{0}</span><span class="s2">, &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;how was your </span><span class="si">{0}</span><span class="s2"> birthday?&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+
+<span class="n">printNameAge</span><span class="p">(</span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Line 1 defines the function, the body of the function is lines 2 and 3.  Line 5 calls the function with the arguments “Dave” and 99.</p>
+<p>You can read about the format() function (and what the <code class="docutils literal notranslate"><span class="pre">{0}</span></code> in the string means) in <a class="reference external" href="https://www.python.org/">Python</a>’s documentation.</p>
+<p>To pass the function to another function (as in callbacks in Python Script), just use the name of the function without brackets:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printNameAge</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello </span><span class="si">{0}</span><span class="s2">, &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;how was your </span><span class="si">{0}</span><span class="s2"> birthday?&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">callFunc</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Calling function...</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">(</span><span class="s2">&quot;Dave&quot;</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+
+
+<span class="n">callFunc</span><span class="p">(</span><span class="n">printNameAge</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Line 11 calls the <code class="docutils literal notranslate"><span class="pre">callFunc</span></code> function, passing the printNameAge function to it.  The <code class="docutils literal notranslate"><span class="pre">callFunc</span></code> function then calls printNameAge on line 8.</p>
+</div>
+<div class="section" id="strings">
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<p>Strings use double or single quotes.  There’s no difference, but that helps if you want to include one type or other in the string.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">someString</span> <span class="o">=</span> <span class="s2">&quot;this is a string with a &#39; single quote inside&quot;</span>
+<span class="n">someOther</span>  <span class="o">=</span> <span class="s1">&#39;this is a string with a &quot; double quote inside&#39;</span>
+</pre></div>
+</div>
+<p>If you need both, just use <code class="docutils literal notranslate"><span class="pre">\</span></code> to escape them:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">someString</span> <span class="o">=</span> <span class="s2">&quot;here&#39;s a string with both types of </span><span class="se">\&quot;</span><span class="s2"> in it&quot;</span>
+</pre></div>
+</div>
+<p>If you need to use <code class="docutils literal notranslate"><span class="pre">\</span></code> itself, just include two:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">someString</span> <span class="o">=</span> <span class="s2">&quot;here&#39;s a demo of using a </span><span class="se">\\</span><span class="s2"> backslash&quot;</span>
+</pre></div>
+</div>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">raw</span></code> strings.  These don’t need the <code class="docutils literal notranslate"><span class="pre">\\</span></code> to mean <code class="docutils literal notranslate"><span class="pre">\</span></code>, which can make certain strings (particularly regular expressions) easier to understand.  However, you also can’t escape a quote.  To make a raw string, just put an <code class="docutils literal notranslate"><span class="pre">r</span></code> before the string</p>
+<blockquote>
+<div>someString = r”this is also a string using a \ backslash”</div></blockquote>
+</div>
+<div class="section" id="further-information">
+<h2>Further Information<a class="headerlink" href="#further-information" title="Permalink to this headline">¶</a></h2>
+<p>This guide may be extended in the future, if people request it, and either I get time, or somebody puts some time into it.  There are many good sources of information on the Internet, I’ve included a couple here.</p>
+<p><a class="reference external" href="https://docs.python.org/2/tutorial/">https://docs.python.org/2/tutorial/</a></p>
+<p><a class="reference external" href="https://www.tutorialspoint.com/python/python_quick_guide.htm">https://www.tutorialspoint.com/python/python_quick_guide.htm</a></p>
+<p>And all the information is available on <a class="reference external" href="https://www.python.org">https://www.python.org</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Python Primer</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#basics">Basics</a></li>
+<li><a class="reference internal" href="#if-statements">If Statements</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#strings">Strings</a></li>
+<li><a class="reference internal" href="#further-information">Further Information</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="intro.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="notepad.html"
+                        title="next chapter">Notepad++ Object</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pythonprimer.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="notepad.html" title="Notepad++ Object"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="intro.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PythonScript 2.0.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2010,2014,2018 Dave Brotherstone.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.6.
+    </div>
+  </body>
+</html>

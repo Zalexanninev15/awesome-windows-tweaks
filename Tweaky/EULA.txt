@@ -1,0 +1,36 @@
+SOFTWARE LICENSE TERMS
+
+This software is provided for use only under the terms of this license.  
+
+These license terms are an agreement between d7xTech, Inc and you.  These license terms apply to any software, code, or documentation included in this software package, no matter where you obtained this software package.  
+
+BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.  
+
+YOU ARE NOT LICENSED TO USE THIS SOFTWARE WITHOUT PRIOR ACCEPTANCE OF THESE TERMS.  
+
+IF YOU DO NOT ACCEPT THESE TERMS, DO NOT USE THE SOFTWARE!
+
+If you comply with these license terms, you have the rights below.
+
+1. SCOPE OF LICENSE:  The software is licensed, not sold. This agreement gives you only the right to use this software as intended, but d7xTech, Inc reserves all other rights.  You may use the software only as intended and permitted in this agreement.  
+
+You may:  
+
+* install and use any number of copies of the software on your personally owned computers, or those you are personally in charge of operating or maintaining.  
+
+You may not:
+
+* use this software without accepting this agreement.
+* modify this software in any way.  
+* rent, lease or lend the software;
+* redistribute this software or publish for others to copy, unless in it's original packaging with ALL original files unmodified from their original form, acknowledge clearly what the software is intended for and where it originates from (d7xTech, Inc, www.d7xTech.com,) and distribute no additional files or modifications to the original package.  
+
+2. SUPPORT:  This software is provided "AS IS," therefore d7xTech, Inc nor any contributor to or distributor  of this software or it's documentation or associated files is not bound to provide any level of support for it's use.
+
+3. THIS SOFTWARE IS LICENSED "AS-IS," therefore by using this software, you agree that only you will bear the full risk of using this software.  d7xTech, Inc gives no express warranty or guarantee with this license or use of this software.  To the full extent permitted by law, d7xTech, Inc excludes any implied warranty or guarantee of proper operation for a particular purpose.  
+
+4. REMEDIES AND DAMAGES.  By using this software, you agree that you cannot recover any damages (monetary or otherwise) for any use or misuse of this software, including consequential, lost profits, indirect, incidental, or any other possible damages.  This applies to the software or any related service or software, including code and documentation.  This agreement applies regardless of any claims for breach of contract, warranty, guarantee, liability, condition, or even negligence, whether true or not.  d7xTech, Inc or any contributor to or distributor of this software or it's documentation or associated files will not be held responsible in any way for any damages caused by this software, the associated code and documentation, or any suggested use.  
+
+
+---
+For questions please contact d7xTech, Inc @ www.d7xTech.com/contact-us  

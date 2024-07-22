@@ -1,0 +1,1 @@
+cleanmgr /sageset:1

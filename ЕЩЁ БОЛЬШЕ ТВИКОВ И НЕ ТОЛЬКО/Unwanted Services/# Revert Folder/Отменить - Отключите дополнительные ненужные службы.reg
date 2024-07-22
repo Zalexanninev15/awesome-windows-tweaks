@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+;Enable Windows Biometric Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WbioSrvc]
+"Start"=dword:00000003
+
+;Enable Windows Font Cache Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FontCache]
+"Start"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FontCache3.0.0.0]
+"Start"=dword:00000003
+
+;Enable Human Interface Device Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hidserv]
+"Start"=dword:00000003
+
+;Enable Graphics performance monitor service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc]
+"Start"=dword:00000003
+
+;Enable Windows Image Acquisition (WIA)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\stisvc]
+"Start"=dword:00000003
+
+;Enable Windows Error Reporting Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+"Start"=dword:00000003
+
+;Enable Program Compatibility Assistant Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
+"Start"=dword:00000003
+
+;Enable Windows Event Collector
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wecsvc]
+"Start"=dword:00000003

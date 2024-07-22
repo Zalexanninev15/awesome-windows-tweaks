@@ -1,0 +1,102 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\History\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\0]
+"Version"=dword:00cf00cf
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\Status\GPExtensions\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}]
+"LastPolicyTime"=dword:016268b9
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\TextInput]
+"AllowLinguisticDataCollection"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\VFUProvider]
+"StartTime"=hex(b):3a,e7,ee,10,4b,6a,da,01
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"RestrictImplicitTextCollection"=dword:00000001
+"RestrictImplicitInkCollection"=dword:00000001
+"AllowInputPersonalization"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM]
+"DisableCustomerImprovementProgram"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SearchCompanion]
+"DisableContentFileUpdates"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001
+"DisableInventory"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\ScriptedDiagnosticsProvider\Policy]
+"DisableQueryRemoteServer"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WDI\{9c5a40da-b965-4fc3-8781-88dd50a6299d}]
+"ScenarioExecutionEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows Search\UsnNotifier\Windows\Catalogs\SystemIndex]
+"{5BE4A3F9-0000-0000-0000-E0503E000000}"="362659360"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc]
+"Start"=dword:00000004
+
+[HKEY_USERS\S-1-5-20\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Usage]
+"CPUpct"="0.004962"
+"MemoryUsageKB"=hex(b):b4,0e,00,00,00,00,00,00
+"NormalDownloadCount"=dword:00000000
+
+[HKEY_USERS\S-1-5-21-467190835-1795634448-1402218043-1004\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\History\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}\0]
+"Version"=dword:00720072
+
+[HKEY_USERS\S-1-5-21-467190835-1795634448-1402218043-1004\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\Status\GPExtensions\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}]
+"LastPolicyTime"=dword:016268b9
+
+[HKEY_USERS\S-1-5-21-467190835-1795634448-1402218043-1004\SOFTWARE\Policies\Microsoft\Edge]
+"SendSiteInfoToImproveServices"=dword:00000000
+"MetricsReportingEnabled"=dword:00000000
+"SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000
+"ConfigureDoNotTrack"=dword:00000001
+"PaymentMethodQueryEnabled"=dword:00000000
+"UserFeedbackAllowed"=dword:00000000
+"LocalProvidersEnabled"=dword:00000000
+"SearchSuggestEnabled"=dword:00000000
+"EdgeShoppingAssistantEnabled"=dword:00000000
+"WebWidgetAllowed"=dword:00000000
+"HubsSidebarEnabled"=dword:00000000
+"ResolveNavigationErrorsUseWebService"=dword:00000000
+"PasswordManagerEnabled"=dword:00000000
+"SiteSafetyServicesEnabled"=dword:00000000
+"SmartScreenEnabled"=dword:00000000
+"TyposquattingCheckerEnabled"=dword:00000000
+"AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000
+"AlternateErrorPagesEnabled"=dword:00000000
+"AutofillAddressEnabled"=dword:00000000
+"AutofillCreditCardEnabled"=dword:00000000
+"NetworkPredictionOptions"=dword:00000002
+"PersonalizationReportingEnabled"=dword:00000000
+
+[-HKEY_USERS\S-1-5-21-467190835-1795634448-1402218043-1004\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy Objects]

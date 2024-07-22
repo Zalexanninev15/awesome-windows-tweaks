@@ -1,0 +1,726 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Notepad++ Object &#8212; PythonScript 2.0.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Editor Object" href="scintilla.html" />
+    <link rel="prev" title="Python Primer" href="pythonprimer.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="scintilla.html" title="Editor Object"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="pythonprimer.html" title="Python Primer"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PythonScript 2.0.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="notepad-object">
+<h1>Notepad++ Object<a class="headerlink" href="#notepad-object" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Notepad">
+<em class="property">class </em><code class="descname">Notepad</code><a class="headerlink" href="#Notepad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="notepad.activateBufferID">
+<code class="descclassname">notepad.</code><code class="descname">activateBufferID</code><span class="sig-paren">(</span><em>bufferID</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.activateBufferID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activates the given <em>bufferID</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bufferID</span> <span class="o">=</span> <span class="n">notepad</span><span class="o">.</span><span class="n">getCurrentBufferID</span><span class="p">()</span>
+<span class="o">...</span>
+<span class="n">notepad</span><span class="o">.</span><span class="n">activateBufferID</span><span class="p">(</span><span class="n">bufferID</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.activateFile">
+<code class="descclassname">notepad.</code><code class="descname">activateFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.activateFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activates the document with the given filename</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.activateIndex">
+<code class="descclassname">notepad.</code><code class="descname">activateIndex</code><span class="sig-paren">(</span><em>view</em>, <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.activateIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activates the document with the given view and index.
+<em>view</em> is 0 or 1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.allocateCmdID">
+<code class="descclassname">notepad.</code><code class="descname">allocateCmdID</code><span class="sig-paren">(</span><em>numberRequested</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.allocateCmdID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allocates a range of Command ID for use in WM_COMMAND. Mainly used internally by plugins.</p>
+<p>Returns the start number of the requested range</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.allocateMarker">
+<code class="descclassname">notepad.</code><code class="descname">allocateMarker</code><span class="sig-paren">(</span><em>numberRequested</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.allocateMarker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allocates a range of marker number for Scintilla.
+Use this to stop marker number collisions with other plugins / scripts.</p>
+<p>Returns the start number of the requested range</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.allocateSupported">
+<code class="descclassname">notepad.</code><code class="descname">allocateSupported</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.allocateSupported" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the Command ID allocation API is supported in this version of Notepad++</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.callback">
+<code class="descclassname">notepad.</code><code class="descname">callback</code><span class="sig-paren">(</span><em>function</em>, <em>notifications</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers a callback function for a notification.
+<em>notifications</em> is a list of messages to call the function for.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_callback</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Buffer Activated </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;bufferID&quot;</span><span class="p">]</span>
+
+<span class="n">notepad</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">my_callback</span><span class="p">,</span> <span class="p">[</span><span class="n">NOTIFICATION</span><span class="o">.</span><span class="n">BUFFERACTIVATED</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="enums.html#NOTIFICATION" title="NOTIFICATION"><code class="xref py py-class docutils literal notranslate"><span class="pre">NOTIFICATION</span></code></a> enum corresponds to the NPPN_* plugin notifications.
+The function arguments is a map, and the contents vary dependant on the notification.</p>
+<p>Note that the callback will live on past the life of the script, so you can use this
+to perform operations whenever a document is opened, saved, changed etc.</p>
+<p>Also note that it is good practice to put the function in another module (file), and
+then import that module in the script that calls <code class="docutils literal notranslate"><span class="pre">notepad.callback()</span></code>.  This way
+you can unregister the callback easily.</p>
+<p>For Scintilla notifications, see <code class="docutils literal notranslate"><span class="pre">editor.callback()</span></code> -&gt; bool</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the registration was successful</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.clearCallbacks">
+<code class="descclassname">notepad.</code><code class="descname">clearCallbacks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.clearCallbacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unregisters all callbacks</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">notepad.</code><code class="descname">clearCallbacks</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span></dt>
+<dd><p>Unregisters all callbacks for the given function.  Note that this uses the actual function object, so if the function has
+been redefined since it was registered, this will fail.  If this has happened, use one of the other <code class="docutils literal notranslate"><span class="pre">clearCallbacks()</span></code>
+functions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">notepad.</code><code class="descname">clearCallbacks</code><span class="sig-paren">(</span><em>eventsList</em><span class="sig-paren">)</span></dt>
+<dd><p>Unregisters all callbacks for the given list of events.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">notepad</span><span class="o">.</span><span class="n">clearCallbacks</span><span class="p">([</span><span class="n">NOTIFICATION</span><span class="o">.</span><span class="n">BUFFERACTIVATED</span><span class="p">,</span> <span class="n">NOTIFICATION</span><span class="o">.</span><span class="n">FILESAVED</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="enums.html#NOTIFICATION" title="NOTIFICATION"><code class="xref py py-class docutils literal notranslate"><span class="pre">NOTIFICATION</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">notepad.</code><code class="descname">clearCallbacks</code><span class="sig-paren">(</span><em>function</em>, <em>eventsList</em><span class="sig-paren">)</span></dt>
+<dd><p>Unregisters the callback for the given callback function for the list of events.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.close">
+<code class="descclassname">notepad.</code><code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the currently active document</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.closeAll">
+<code class="descclassname">notepad.</code><code class="descname">closeAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.closeAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes all open documents</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.closeAllButCurrent">
+<code class="descclassname">notepad.</code><code class="descname">closeAllButCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.closeAllButCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes all but the currently active document</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.createScintilla">
+<code class="descclassname">notepad.</code><code class="descname">createScintilla</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; editor<a class="headerlink" href="#notepad.createScintilla" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new Scintilla handle.</p>
+<p>Returns an <a class="reference internal" href="scintilla.html#editor"><span class="std std-ref">Editor Object</span></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.decodeSci">
+<code class="descclassname">notepad.</code><code class="descname">decodeSci</code><span class="sig-paren">(</span><em>view</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.decodeSci" title="Permalink to this definition">¶</a></dt>
+<dd><p>View is either 0 or 1</p>
+<p>Returns the old unicode mode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.destroyScintilla">
+<code class="descclassname">notepad.</code><code class="descname">destroyScintilla</code><span class="sig-paren">(</span><em>editor</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.destroyScintilla" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destroy a Scintilla handle created with createScintilla</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.disableAutoUpdate">
+<code class="descclassname">notepad.</code><code class="descname">disableAutoUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.disableAutoUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disables notepad++ auto update functionality</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.docSwitcherDisableColumn">
+<code class="descclassname">notepad.</code><code class="descname">docSwitcherDisableColumn</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.docSwitcherDisableColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if it should be hidden, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it should be shown</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.encodeSci">
+<code class="descclassname">notepad.</code><code class="descname">encodeSci</code><span class="sig-paren">(</span><em>view</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.encodeSci" title="Permalink to this definition">¶</a></dt>
+<dd><p>View is either 0 or 1</p>
+<p>Returns the new unicode mode</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.flashWindow">
+<code class="descclassname">notepad.</code><code class="descname">flashWindow</code><span class="sig-paren">(</span><em>count</em>, <em>milliseconds</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.flashWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flashes notepad++ for the given count and milliseconds</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getAppdataPluginsAllowed">
+<code class="descclassname">notepad.</code><code class="descname">getAppdataPluginsAllowed</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.getAppdataPluginsAllowed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if loading plugins from %APPDATA%\Notepad++\plugins is allowed, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getBufferFilename">
+<code class="descclassname">notepad.</code><code class="descname">getBufferFilename</code><span class="sig-paren">(</span><em>bufferID</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getBufferFilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the filename of the given buffer ID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCommandLine">
+<code class="descclassname">notepad.</code><code class="descname">getCommandLine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getCommandLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the command line used to start Notepad++</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentBufferID">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentBufferID</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getCurrentBufferID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the bufferID of the currently active buffer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentDocIndex">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentDocIndex</code><span class="sig-paren">(</span><em>view</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getCurrentDocIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current active index for the given <em>view</em> (0 or 1)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentFilename">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentFilename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getCurrentFilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the filename of the active document</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentLang">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentLang</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; LANGTYPE<a class="headerlink" href="#notepad.getCurrentLang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current language type</p>
+<p>Returns <a class="reference internal" href="enums.html#LANGTYPE" title="LANGTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">LANGTYPE</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentNativeLangEncoding">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentNativeLangEncoding</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.getCurrentNativeLangEncoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current native language encoding</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getCurrentView">
+<code class="descclassname">notepad.</code><code class="descname">getCurrentView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getCurrentView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the currently active view (0 or 1)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getEditorDefaultBackgroundColor">
+<code class="descclassname">notepad.</code><code class="descname">getEditorDefaultBackgroundColor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; tuple<a class="headerlink" href="#notepad.getEditorDefaultBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default background color as tuple</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getEditorDefaultForegroundColor">
+<code class="descclassname">notepad.</code><code class="descname">getEditorDefaultForegroundColor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; tuple<a class="headerlink" href="#notepad.getEditorDefaultForegroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default foreground color as tuple</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getEnableThemeTextureFunc">
+<code class="descclassname">notepad.</code><code class="descname">getEnableThemeTextureFunc</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.getEnableThemeTextureFunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if a dialog window supports background texturing, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getEncoding">
+<code class="descclassname">notepad.</code><code class="descname">getEncoding</code><span class="sig-paren">(</span><span class="optional">[</span><em>bufferID</em><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; BUFFERENCODING<a class="headerlink" href="#notepad.getEncoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the encoding of the given <em>bufferID</em>.  If no bufferID is given, then the encoding of the
+currently active buffer is returned.</p>
+<p>Returns <a class="reference internal" href="enums.html#BUFFERENCODING" title="BUFFERENCODING"><code class="xref py py-class docutils literal notranslate"><span class="pre">BUFFERENCODING</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getFiles">
+<code class="descclassname">notepad.</code><code class="descname">getFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#notepad.getFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list of the open filenames.</p>
+<p>Returns A list of tuples containing <code class="docutils literal notranslate"><span class="pre">(filename,</span> <span class="pre">bufferID,</span> <span class="pre">index,</span> <span class="pre">view)</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getFormatType">
+<code class="descclassname">notepad.</code><code class="descname">getFormatType</code><span class="sig-paren">(</span><span class="optional">[</span><em>bufferID</em><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; FORMATTYPE<a class="headerlink" href="#notepad.getFormatType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the format type (i.e. Windows, Unix or Mac) of the given <em>bufferID</em>.
+If no bufferID is given, then the format of the currently active buffer is returned.</p>
+<p>Returns <a class="reference internal" href="enums.html#FORMATTYPE" title="FORMATTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">FORMATTYPE</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getLanguageDesc">
+<code class="descclassname">notepad.</code><code class="descname">getLanguageDesc</code><span class="sig-paren">(</span><em>langType</em><span class="sig-paren">)</span> &#x2192; LANGTYPE<a class="headerlink" href="#notepad.getLanguageDesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the programming language short description from the given <a class="reference internal" href="enums.html#LANGTYPE" title="LANGTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">LANGTYPE</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getLanguageName">
+<code class="descclassname">notepad.</code><code class="descname">getLanguageName</code><span class="sig-paren">(</span><em>langType</em><span class="sig-paren">)</span> &#x2192; LANGTYPE<a class="headerlink" href="#notepad.getLanguageName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the programming language name from the given <a class="reference internal" href="enums.html#LANGTYPE" title="LANGTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">LANGTYPE</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getLangType">
+<code class="descclassname">notepad.</code><code class="descname">getLangType</code><span class="sig-paren">(</span><span class="optional">[</span><em>bufferID</em><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; LANGTYPE<a class="headerlink" href="#notepad.getLangType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the language type of the given <em>bufferID</em>.
+If no bufferID is given, then the language of the currently active buffer is returned.</p>
+<p>Returns <a class="reference internal" href="enums.html#LANGTYPE" title="LANGTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">LANGTYPE</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getNppDir">
+<code class="descclassname">notepad.</code><code class="descname">getNppDir</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#notepad.getNppDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the directory Notepad++ is running in (i.e. the location of notepad++.exe)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getMenuHandle">
+<code class="descclassname">notepad.</code><code class="descname">getMenuHandle</code><span class="sig-paren">(</span><em>menu</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.getMenuHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu is either 0(main) or 1(plugin) -&gt; int</p>
+<p>Returns the handle for the main or plugins menu.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getNbUserLang">
+<code class="descclassname">notepad.</code><code class="descname">getNbUserLang</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.getNbUserLang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of user defined languages</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getPluginConfigDir">
+<code class="descclassname">notepad.</code><code class="descname">getPluginConfigDir</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#notepad.getPluginConfigDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the plugin config directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getPluginMenuHandle">
+<code class="descclassname">notepad.</code><code class="descname">getPluginMenuHandle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#notepad.getPluginMenuHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the handle for the Plugins menu.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getPluginVersion">
+<code class="descclassname">notepad.</code><code class="descname">getPluginVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#notepad.getPluginVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the PythonScript plugin version as a string. There is always four parts to it. e.g. ‘0.9.2.0’</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getSessionFiles">
+<code class="descclassname">notepad.</code><code class="descname">getSessionFiles</code><span class="sig-paren">(</span><em>sessionFileName</em><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#notepad.getSessionFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of files from given session file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getVersion">
+<code class="descclassname">notepad.</code><code class="descname">getVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; tuple<a class="headerlink" href="#notepad.getVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Notepad++ version as a tuple - e.g. 5.6.8 becomes <code class="docutils literal notranslate"><span class="pre">(5,6,8)</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.getWindowsVersion">
+<code class="descclassname">notepad.</code><code class="descname">getWindowsVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; WINVER<a class="headerlink" href="#notepad.getWindowsVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns current windows version <a class="reference internal" href="enums.html#WINVER" title="WINVER"><code class="xref py py-class docutils literal notranslate"><span class="pre">WINVER</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.hideMenu">
+<code class="descclassname">notepad.</code><code class="descname">hideMenu</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.hideMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if it should be hidden, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it should be shown</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.hideStatusBar">
+<code class="descclassname">notepad.</code><code class="descname">hideStatusBar</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.hideStatusBar" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if it should be hidden, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it should be shown</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.hideTabBar">
+<code class="descclassname">notepad.</code><code class="descname">hideTabBar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.hideTabBar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hides the Tab bar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.hideToolBar">
+<code class="descclassname">notepad.</code><code class="descname">hideToolBar</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.hideToolBar" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if it should be hidden, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it should be shown</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isDocSwitcherShown">
+<code class="descclassname">notepad.</code><code class="descname">isDocSwitcherShown</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.isDocSwitcherShown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if document switcher is shown else <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isMenuHidden">
+<code class="descclassname">notepad.</code><code class="descname">isMenuHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.isMenuHidden" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if menu is hidden else <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isSingleView">
+<code class="descclassname">notepad.</code><code class="descname">isSingleView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.isSingleView" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if only one view is used, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isStatusBarHidden">
+<code class="descclassname">notepad.</code><code class="descname">isStatusBarHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.isStatusBarHidden" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if statusbar is hidden else <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isTabBarHidden">
+<code class="descclassname">notepad.</code><code class="descname">isTabBarHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.isTabBarHidden" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if tabbar is hidden else <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.isToolBarHidden">
+<code class="descclassname">notepad.</code><code class="descname">isToolBarHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.isToolBarHidden" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if toolbar is hidden else <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.launchFindInFilesDlg">
+<code class="descclassname">notepad.</code><code class="descname">launchFindInFilesDlg</code><span class="sig-paren">(</span><em>dir2Search</em>, <em>filter</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.launchFindInFilesDlg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launches the find in files dialog for given directory and filter arguments</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.loadSession">
+<code class="descclassname">notepad.</code><code class="descname">loadSession</code><span class="sig-paren">(</span><em>sessionFileName</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.loadSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads a session from a session file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.makeCurrentBufferDirty">
+<code class="descclassname">notepad.</code><code class="descname">makeCurrentBufferDirty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.makeCurrentBufferDirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes current document dirty</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.menuCommand">
+<code class="descclassname">notepad.</code><code class="descname">menuCommand</code><span class="sig-paren">(</span><em>menuCommand</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.menuCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a Notepad++ menu command.  Use the <a class="reference internal" href="enums.html#MENUCOMMAND" title="MENUCOMMAND"><code class="xref py py-class docutils literal notranslate"><span class="pre">MENUCOMMAND</span></code></a> enum, or integers directly from the nativeLang.xml file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.messageBox">
+<code class="descclassname">notepad.</code><code class="descname">messageBox</code><span class="sig-paren">(</span><em>message</em><span class="optional">[</span>, <em>title</em><span class="optional">[</span>, <em>flags</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; MessageBoxFlags<a class="headerlink" href="#notepad.messageBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays a message box with the given <em>message</em> and <em>title</em>.</p>
+<p>Flags can be 0 for a standard ‘OK’ message box, or a combination of <a class="reference internal" href="enums.html#MESSAGEBOXFLAGS" title="MESSAGEBOXFLAGS"><code class="xref py py-class docutils literal notranslate"><span class="pre">MESSAGEBOXFLAGS</span></code></a>.
+<code class="docutils literal notranslate"><span class="pre">title</span></code> is “Python Script for Notepad++” by default, and flags is 0 by default.</p>
+<p>Returns a RESULTxxxx member of <a class="reference internal" href="enums.html#MESSAGEBOXFLAGS" title="MESSAGEBOXFLAGS"><code class="xref py py-class docutils literal notranslate"><span class="pre">MESSAGEBOXFLAGS</span></code></a> as to which button was pressed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.new">
+<code class="descclassname">notepad.</code><code class="descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.open">
+<code class="descclassname">notepad.</code><code class="descname">open</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens the given file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.prompt">
+<code class="descclassname">notepad.</code><code class="descname">prompt</code><span class="sig-paren">(</span><em>prompt</em>, <em>title</em><span class="optional">[</span>, <em>defaultText</em><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#notepad.prompt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompts the user for some text.  Optionally provide the default text to initialise the entry field.</p>
+<p>Returns the string entered.</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">None</span></code> if cancel was pressed
+(note that is different to an empty string, which means that no input was given)</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.reloadBuffer">
+<code class="descclassname">notepad.</code><code class="descname">reloadBuffer</code><span class="sig-paren">(</span><em>bufferID</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.reloadBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reloads the given bufferID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.reloadCurrentDocument">
+<code class="descclassname">notepad.</code><code class="descname">reloadCurrentDocument</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.reloadCurrentDocument" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reloads the current document</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.reloadFile">
+<code class="descclassname">notepad.</code><code class="descname">reloadFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.reloadFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reloads a filename.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.runMenuCommand">
+<code class="descclassname">notepad.</code><code class="descname">runMenuCommand</code><span class="sig-paren">(</span><em>menuName</em>, <em>menuOption</em><span class="optional">[</span>, <em>refreshCache</em><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#notepad.runMenuCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a command from the menus.
+For built-in menus use notepad.menuCommand(), for non built-in menus (e.g. TextFX and macros you’ve defined),
+use <code class="docutils literal notranslate"><span class="pre">notepad.runMenuCommand(menuName,</span> <span class="pre">menuOption)</span></code>.  For other plugin commands (in the plugin menu),
+use <code class="docutils literal notranslate"><span class="pre">notepad.runPluginCommand(pluginName,</span> <span class="pre">menuOption)_</span></code></p>
+<p>Menus are searched for the text, and when found, the internal ID of the menu command is cached.
+When <code class="docutils literal notranslate"><span class="pre">runMenuCommand</span></code> is called, the cache is first checked if it holds the internal ID for the given
+<code class="docutils literal notranslate"><span class="pre">menuName</span></code> and <code class="docutils literal notranslate"><span class="pre">menuOption</span></code>.  If it does, it simply uses the value from the cache.  If the ID could have
+been updated (for example, you’re calling the name of macro that has been removed and added again), set refreshCache
+to <code class="docutils literal notranslate"><span class="pre">True</span></code>.  This is <code class="docutils literal notranslate"><span class="pre">False</span></code> by default.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the menu command was found, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p>e.g.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">notepad</span><span class="o">.</span><span class="n">runMenuCommand</span><span class="p">(</span><span class="s1">&#39;TextFX Edit&#39;</span><span class="p">,</span> <span class="s1">&#39;Delete Blank Lines&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.runPluginCommand">
+<code class="descclassname">notepad.</code><code class="descname">runPluginCommand</code><span class="sig-paren">(</span><em>pluginName</em>, <em>menuOption</em><span class="optional">[</span>, <em>refreshCache</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.runPluginCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a command from the plugin menu.
+Use to run direct commands from the Plugins menu.
+To call TextFX or other menu functions, either use <code class="docutils literal notranslate"><span class="pre">notepad.menuCommand(menuCommand)_</span></code> (for Notepad++ menu commands),
+or <code class="docutils literal notranslate"><span class="pre">notepad.runMenuCommand(menuName,</span> <span class="pre">menuOption)_</span></code> for TextFX or non standard menus (such as macro names).</p>
+<p>Note that menuOption can be a submenu in a plugin’s menu.  So:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">notepad</span><span class="o">.</span><span class="n">runPluginCommand</span><span class="p">(</span><span class="s1">&#39;Python Script&#39;</span><span class="p">,</span> <span class="s1">&#39;demo script&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Could run a script called “demo script” from the Scripts submenu of Python Script.</p>
+<p>Menus are searched for the text, and when found, the internal ID of the menu command is cached.
+When <code class="docutils literal notranslate"><span class="pre">runPluginCommand</span></code> is called, the cache is first checked if it holds the internal ID for the given
+<code class="docutils literal notranslate"><span class="pre">menuName</span></code> and <code class="docutils literal notranslate"><span class="pre">menuOption</span></code>.  If it does, it simply uses the value from the cache.  If the ID could have
+been updated (for example, you’re calling the name of macro that has been removed and added again), set refreshCache
+to <code class="docutils literal notranslate"><span class="pre">True</span></code>.  This is <code class="docutils literal notranslate"><span class="pre">False</span></code> by default.</p>
+<dl class="docutils">
+<dt>e.g.::</dt>
+<dd>notepad.runPluginCommand(‘XML Tools’, ‘Pretty Print (XML only)’)</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.save">
+<code class="descclassname">notepad.</code><code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveAllFiles">
+<code class="descclassname">notepad.</code><code class="descname">saveAllFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveAllFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves all currently unsaved files</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveAs">
+<code class="descclassname">notepad.</code><code class="descname">saveAs</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveAs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current file as the specified filename</p>
+<p><em>Only works in Notepad++ 5.7 onwards</em></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveAsCopy">
+<code class="descclassname">notepad.</code><code class="descname">saveAsCopy</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveAsCopy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current file as the specified filename, but don’t change the filename for the buffer in Notepad++</p>
+<p><em>Only works in Notepad++ 5.7 onwards</em></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveFile">
+<code class="descclassname">notepad.</code><code class="descname">saveFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the provided file - must not be the active one</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveCurrentSession">
+<code class="descclassname">notepad.</code><code class="descname">saveCurrentSession</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveCurrentSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the current session (list of open files) to a file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.saveSession">
+<code class="descclassname">notepad.</code><code class="descname">saveSession</code><span class="sig-paren">(</span><em>filename</em>, <em>filesList</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.saveSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a session file with the list of filenames.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setCurrentLang">
+<code class="descclassname">notepad.</code><code class="descname">setCurrentLang</code><span class="sig-paren">(</span><em>langType</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setCurrentLang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the language type of the currently active buffer (see <a class="reference internal" href="enums.html#LANGTYPE" title="LANGTYPE"><code class="xref py py-class docutils literal notranslate"><span class="pre">LANGTYPE</span></code></a>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setEditorBorderEdge">
+<code class="descclassname">notepad.</code><code class="descname">setEditorBorderEdge</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setEditorBorderEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if editor should use border edge, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setEncoding">
+<code class="descclassname">notepad.</code><code class="descname">setEncoding</code><span class="sig-paren">(</span><em>encoding</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setEncoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the encoding of the current buffer.  Use the <a class="reference internal" href="enums.html#BUFFERENCODING" title="BUFFERENCODING"><code class="xref py py-class docutils literal notranslate"><span class="pre">BUFFERENCODING</span></code></a> constants</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">notepad.</code><code class="descname">setEncoding</code><span class="sig-paren">(</span><em>encoding</em>, <em>bufferID</em><span class="sig-paren">)</span></dt>
+<dd><p>Sets the encoding of the given bufferID.  Use the <a class="reference internal" href="enums.html#BUFFERENCODING" title="BUFFERENCODING"><code class="xref py py-class docutils literal notranslate"><span class="pre">BUFFERENCODING</span></code></a> constants</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setFormatType">
+<code class="descclassname">notepad.</code><code class="descname">setFormatType</code><span class="sig-paren">(</span><em>formatType</em><span class="optional">[</span>, <em>bufferID</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setFormatType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the format type (i.e. Windows, Unix or Mac) of the specified buffer ID.
+If not bufferID is passed, then the format type of the currently active buffer is set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setLangType">
+<code class="descclassname">notepad.</code><code class="descname">setLangType</code><span class="sig-paren">(</span><em>langType</em><span class="optional">[</span>, <em>bufferID</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setLangType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the language type of the given <em>bufferID</em>. If not bufferID is given, sets the language for the currently active buffer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setSmoothFont">
+<code class="descclassname">notepad.</code><code class="descname">setSmoothFont</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setSmoothFont" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if smooth font should be set, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.setStatusBar">
+<code class="descclassname">notepad.</code><code class="descname">setStatusBar</code><span class="sig-paren">(</span><em>statusBarSection</em>, <em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.setStatusBar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the status bar text. For statusBarSection, use one of the <a class="reference internal" href="enums.html#STATUSBARSECTION" title="STATUSBARSECTION"><code class="xref py py-class docutils literal notranslate"><span class="pre">STATUSBARSECTION</span></code></a> constants.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.showDocSwitcher">
+<code class="descclassname">notepad.</code><code class="descname">showDocSwitcher</code><span class="sig-paren">(</span><em>boolean</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.showDocSwitcher" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if it should be hidden, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it should be shown</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.showTabBar">
+<code class="descclassname">notepad.</code><code class="descname">showTabBar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#notepad.showTabBar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the Tab bar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="notepad.triggerTabbarContextMenu">
+<code class="descclassname">notepad.</code><code class="descname">triggerTabbarContextMenu</code><span class="sig-paren">(</span><em>view</em>, <em>index2Activate</em><span class="sig-paren">)</span><a class="headerlink" href="#notepad.triggerTabbarContextMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Activates the context menu for given view and tab index</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="pythonprimer.html"
+                        title="previous chapter">Python Primer</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="scintilla.html"
+                        title="next chapter">Editor Object</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/notepad.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="scintilla.html" title="Editor Object"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="pythonprimer.html" title="Python Primer"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PythonScript 2.0.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2010,2014,2018 Dave Brotherstone.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.6.
+    </div>
+  </body>
+</html>

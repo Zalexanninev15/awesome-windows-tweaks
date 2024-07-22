@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; от iosiph-a с любовью жи ес
+
+; Качество фона рабочего стола на сотку жи ес
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"JPEGImportQuality"=dword:00000080

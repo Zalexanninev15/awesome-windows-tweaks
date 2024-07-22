@@ -1,0 +1,1 @@
+cleanmgr /sagerun:1

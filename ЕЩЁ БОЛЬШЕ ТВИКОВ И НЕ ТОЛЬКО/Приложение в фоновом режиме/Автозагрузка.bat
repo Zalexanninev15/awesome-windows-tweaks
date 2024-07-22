@@ -1,0 +1,1 @@
+start ms-settings:startupapps

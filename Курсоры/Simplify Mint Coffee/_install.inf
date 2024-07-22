@@ -1,0 +1,56 @@
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+; -- Common Information
+
+[Scheme.Cur]
+01_normal_select.cur
+02_help_select.cur
+03_working_in_background.ani
+04_busy.ani
+05_precision_select.cur
+06_text_select.cur
+07_handwriting.cur
+08_unavailable.cur
+09_vertical_resize.cur
+10_horizontal_resize.cur
+11_diagonal_resize_1.cur
+12_diagonal_resize_2.cur
+13_move.cur
+14_alternate_select.cur
+15_link_select.cur
+16_location_select.cur
+17_person_select.cur
+
+[Strings]
+CUR_DIR       = "Cursors\Simplify Mint Coffee"
+SCHEME_NAME   = "Simplify Mint Coffee"
+pointer       = "01_normal_select.cur"
+help          = "02_help_select.cur"
+work          = "03_working_in_background.ani"
+busy          = "04_busy.ani"
+cross         = "05_precision_select.cur"
+text          = "06_text_select.cur"
+hand          = "07_handwriting.cur"
+unavailable  = "08_unavailable.cur"
+vert          = "09_vertical_resize.cur"
+horz          = "10_horizontal_resize.cur"
+dgn1          = "11_diagonal_resize_1.cur"
+dgn2          = "12_diagonal_resize_2.cur"
+move          = "13_move.cur"
+alternate     = "14_alternate_select.cur"
+link          = "15_link_select.cur"
+pin			  = "16_location_select.cur"
+person		  = "17_person_select.cur"

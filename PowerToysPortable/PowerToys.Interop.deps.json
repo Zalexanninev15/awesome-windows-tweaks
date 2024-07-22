@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": "net8.0-windows",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    "net8.0-windows": {
+      "PowerToys.Interop/0.82.0": {
+        "runtime": {
+          "PowerToys.Interop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PowerToys.Interop/0.82.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

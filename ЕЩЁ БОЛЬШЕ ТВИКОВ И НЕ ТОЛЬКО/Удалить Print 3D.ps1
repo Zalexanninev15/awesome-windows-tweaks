@@ -1,0 +1,1 @@
+Get-AppxPackage *Microsoft.Print3D* | Remove-AppxPackage

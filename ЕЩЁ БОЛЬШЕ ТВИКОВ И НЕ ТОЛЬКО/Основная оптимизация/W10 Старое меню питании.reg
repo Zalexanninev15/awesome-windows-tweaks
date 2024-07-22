@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; ios1ph industries ahaha
+
+; Старое меню питание как в windows 7
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell]
+"UseWin32BatteryFlyout"=dword:00000001

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;Так же лечит ошибку онлайна в первой части Borderlands
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\eventlog]
+"Start"=dword:00000003

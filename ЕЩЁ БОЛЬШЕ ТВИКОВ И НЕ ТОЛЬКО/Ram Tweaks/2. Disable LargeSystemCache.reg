@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Large System Cache
+ 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"LargeSystemCache"=dword:0

@@ -1,0 +1,1 @@
+Get-AppxPackage *Microsoft.Messaging* | Remove-AppxPackage

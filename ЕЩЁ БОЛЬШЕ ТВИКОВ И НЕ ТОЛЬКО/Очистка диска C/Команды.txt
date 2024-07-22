@@ -1,0 +1,16 @@
+Запуск меню очистки - cleanmgr /sageset:1
+Запуск очистки - cleanmgr /sagerun:1
+
+Анализ хранилища WinSxS - Dism.exe /online /cleanup-image /AnalyzeComponentStore
+Очистка хранилища WinSxS - Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+
+Отключить гибернацию - powercfg -h off
+Уменьшить размер файла гибернации - powercfg -h -type reduced
+Включить гибернацию - powercfg -h on
+
+Отключить зарезервированное хранилище - DISM /Online /Set-ReservedStorageState /State:Disabled
+Включить зарезервированное хранилище - DISM /Online /Set-ReservedStorageState /State:Enabled
+
+Проверить сжатие системы - compact /CompactOS:query
+Сжать систему - compact /CompactOS:always
+Отменить сжатие системы - compact /CompactOS:never

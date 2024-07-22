@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\EmptyThisFolder]
+@="Удалить содержимое папки"
+"Icon"="imageres.dll,257"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\EmptyThisFolder\command]
+@="cmd /c \"cd /d %1 && del /s /f /q *.* && rd /s /q .\""

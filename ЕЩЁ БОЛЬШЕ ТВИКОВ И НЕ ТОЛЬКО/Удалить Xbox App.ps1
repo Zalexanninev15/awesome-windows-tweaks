@@ -1,0 +1,1 @@
+Get-AppxPackage *xboxapp* | Remove-AppxPackage

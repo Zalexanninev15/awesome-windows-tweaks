@@ -1,0 +1,1 @@
+rd C:\Windows\Prefetch /s /q

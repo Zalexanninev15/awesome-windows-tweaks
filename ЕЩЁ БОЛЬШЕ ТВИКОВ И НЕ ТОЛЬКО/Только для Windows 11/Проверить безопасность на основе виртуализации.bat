@@ -1,0 +1,1 @@
+%windir%\System32\msinfo32.exe

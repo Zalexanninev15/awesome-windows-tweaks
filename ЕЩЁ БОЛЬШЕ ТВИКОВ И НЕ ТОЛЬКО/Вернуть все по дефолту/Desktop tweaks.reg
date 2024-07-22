@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; от iosiph-a с любовью жи ес
+
+; уменьшение времени отключения процессов и показа меню
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"
+"HungAppTimeout"="1000"
+"WaitToKillAppTimeout"="2000"
+"LowLevelHooksTimeout"="1000"
+"MenuShowDelay"="400"

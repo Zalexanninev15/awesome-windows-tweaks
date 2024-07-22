@@ -1,0 +1,1 @@
+Get-AppxPackage *Microsoft.Microsoft3DViewer* | Remove-AppxPackage
