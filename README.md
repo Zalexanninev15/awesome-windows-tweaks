@@ -1,4 +1,4 @@
-# Awesome- Windows Tweaks
+# Awesome Windows Tweaks
 
 # Описание
 
