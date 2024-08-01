@@ -1,1 +1,0 @@
-TI cmd.exe /c copy /y imageres.dll.mun C:\Windows\SystemResources\

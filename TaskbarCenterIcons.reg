@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+;Значок меню посередине для win11
+
+[HKEY_CURRENT_USER\Software\StartIsBack]
+"TaskbarCenterIcons"=dword:00000001

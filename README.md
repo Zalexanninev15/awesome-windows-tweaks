@@ -16,11 +16,9 @@
 
 3.1 ```Set-ExecutionPolicy -Scope LocalMachine Unrestricted -Force```
 
-3.2 ```powershell -command "irm https://get.activated.win | iex"```
+3.2 ```powershell -command "irm https://get.activated.win | iex"``` - активация системы / офиса
 
-* 3.2 - активация Windows, выбираем первый пункт. Если потом установите Office - выбирайте второй пункт
-
-4. Устанавливаем драйвера для всех устройств. Для этого можете использовать Driver Booster (**IODB.zip**)
+4. Устанавливаем драйвера для всех устройств. Для этого можете использовать Driver Booster (**Drivers.zip**)
 
 5. Перезапускаем систему!
 
