@@ -1,6 +1,6 @@
 @echo off
 :: choco
-pwsh -CommandWithArgs "choco install apkshellext choco-cleaner cyotek-webcopy dotnet-8.0-desktopruntime dotnet-8.0-runtime exiftool hashtab hugo jcpicker privaxy python312 runinbash rust vcredist140 ubisoft-connect rustrover visualstudio2022community choco-protocol-support docker -y"
+pwsh -CommandWithArgs "choco install apkshellext choco-cleaner cyotek-webcopy dotnet-8.0-desktopruntime dotnet-8.0-runtime exiftool hashtab hugo jcpicker privaxy python312 runinbash vcredist140 ubisoft-connect rustrover visualstudio2022community choco-protocol-support docker -y"
 :: imageglass
 :: --ignore-checksums"
 
@@ -44,6 +44,7 @@ pwsh -CommandWithArgs "scoop install heroic-games-launcher"
 pwsh -CommandWithArgs "scoop install insomnia"
 pwsh -CommandWithArgs "scoop install jcpicker"
 pwsh -CommandWithArgs "scoop install kryptor"
+pwsh -CommandWithArgs "scoop install extras/powertoys"
 pwsh -CommandWithArgs "scoop install masscode"
 pwsh -CommandWithArgs "scoop install mc"
 pwsh -CommandWithArgs "scoop install micro"
