@@ -1,6 +1,6 @@
 @echo off
 :: choco
-pwsh -CommandWithArgs "choco install apkshellext choco-cleaner cyotek-webcopy dotnet-8.0-desktopruntime dotnet-8.0-runtime exiftool hashtab hugo jcpicker privaxy python312 runinbash vcredist140 ubisoft-connect rustrover visualstudio2022community choco-protocol-support docker -y"
+pwsh -CommandWithArgs "choco install apkshellext choco-cleaner cyotek-webcopy dotnet-8.0-desktopruntime dotnet-8.0-runtime exiftool hashtab hugo jcpicker privaxy python312 runinbash vcredist140 ubisoft-connect rustrover visualstudio2022community choco-protocol-support docker autohotkey.portable -y"
 :: imageglass
 :: --ignore-checksums"
 
@@ -18,6 +18,7 @@ pwsh -CommandWithArgs "scoop install cacert"
 pwsh -CommandWithArgs "scoop install vscode"
 pwsh -CommandWithArgs "scoop install cmake"
 pwsh -CommandWithArgs "scoop install copyq"
+pwsh -CommandWithArgs "scoop install extras/ayugram"
 pwsh -CommandWithArgs "scoop install cowsay"
 pwsh -CommandWithArgs "scoop install privacy.sexy"
 pwsh -CommandWithArgs "scoop install handbrake"
