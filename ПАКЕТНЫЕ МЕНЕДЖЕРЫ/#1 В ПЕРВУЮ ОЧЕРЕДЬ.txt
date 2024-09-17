@@ -1,0 +1,17 @@
+Устанавливаем Chocolatey:
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+Устанавливаем scoop:
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+Информация про WinGet + установка, если отсутствует: 
+https://winitpro.ru/index.php/2020/08/11/menedzher-paketov-winget-windows/
+https://pyatilistnik.org/install-winget-windows-package-manager/
+
+Для всех трёх пакетных менеджеров: https://github.com/marticliment/UniGetUI
+Через WinGet: winget install --exact --id SomePythonThings.WingetUIStore --source winget
+
+~~~ ЕСЛИ ЮЗАЕТЕ БЕЗ СКРИПТА ДЛЯ WINGET ~~~
+Устанавливаем PowerShell 7 для работы скриптов:
+https://aka.ms/powershell-release?tag=stable
+Ищем окончание "-win-x64.msi" в Assets
