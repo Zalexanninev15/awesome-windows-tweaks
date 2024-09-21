@@ -1,4 +1,5 @@
 # Введите команду в PowerShell от имени Администратора: irm https://clcr.me/mtc | iex
+# Подробнее про данный скрипт: https://t.me/maxlife15/1678
 
 $mtc_version = "10"
 $ErrorActionPreference = "Stop"
