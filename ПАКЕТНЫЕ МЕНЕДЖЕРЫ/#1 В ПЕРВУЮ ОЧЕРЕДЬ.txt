@@ -8,6 +8,8 @@ https://pyatilistnik.org/install-winget-windows-package-manager/
 Для всех пакетных менеджеров: https://github.com/marticliment/UniGetUI
 Через WinGet: winget install --exact --id SomePythonThings.WingetUIStore --source winget
 
+ВСЕ BAT-СКРИПТЫ ЗАПУСКАТЬ СТРОГО ОТ АДМИНИСТРАТОРА!!!
+
 ~~~ ЕСЛИ ЮЗАЕТЕ БЕЗ СКРИПТА ДЛЯ WINGET ~~~
 Устанавливаем PowerShell 7 для работы скриптов:
 https://aka.ms/powershell-release?tag=stable

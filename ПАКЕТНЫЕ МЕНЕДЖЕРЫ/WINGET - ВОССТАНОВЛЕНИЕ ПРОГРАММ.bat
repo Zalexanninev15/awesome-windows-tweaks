@@ -1,2 +1,53 @@
 @echo off
-powershell -c "winget install --id=Microsoft.PowerShell -e -h --scope "machine" ; winget install --id=Microsoft.PowerToys -e -h --scope "user" ; winget install --id=lin-ycv.EverythingPowerToys -e -h --scope "user" ; winget install --id=Microsoft.DevHome -e -h --scope "user" ; winget install --id=DevToys-app.DevToys -e -h --scope "user" ; winget install --id=DEVCOM.JetBrainsMonoNerdFont -e -h --scope "machine"; winget install --id=Microsoft.Sysinternals.RDCMan -e -h --scope "user" ; winget install --id=Microsoft.Sysinternals.ProcessMonitor -e -h --scope "user" ; winget install --id=Microsoft.Sysinternals.Autoruns -e -h --scope "user" ; winget install --id=Microsoft.Sysinternals.BGInfo -e -h --scope "user" ; winget install --id=Microsoft.Sysinternals.ProcessExplorer -e -h --scope "user" ; winget install --id=Microsoft.Sysinternals.TCPView -e -h --scope "user" ; winget install --id=Sandboxie.Plus -e -h --scope "machine" ; winget install --id=Microsoft.WindowsTerminal -e -h --scope "user" ; winget install --id=AdrienAllard.FileConverter -e -h --scope "user" ; winget install --id=Microsoft.VCRedist.2015+.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2015+.x64 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2010.x64 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2012.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2005.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2008.x64 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2008.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2005.x64 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2013.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2010.x86 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2012.x64 -e -h --scope "machine" ; winget install --id=Microsoft.VCRedist.2013.x64 -e -h --scope "machine" ; winget install --id=Valve.Steam -e -h --scope "user" ; winget install --id=JustArchiNET.ArchiSteamFarm -e -h --scope "user" ; winget install --id=calendulish.SteamToolsNG -e -h --scope "user" ; winget install --id=Codeusa.SteamCleaner -e -h --scope "user" ; winget install --id=TravisLane.SteamArtManager -e -h --scope "user" ; winget install --id=StefansTools.SKTimeStamp -e -h --scope "user" ; winget install --id=Ubisoft.Connect -e -h --scope "user" ; winget install --id=Microsoft.VisualStudio.2022.Community -e -h --scope "machine" ; winget install --id=GnuPG.Gpg4win -e -h --scope "user" ; winget install --id=Proton.ProtonVPN -e -h --scope "user" ; winget install --id=Implbits.HashTab -e -h --scope "machine" ; winget install --id=DuongDieuPhap.ImageGlass -e -h --scope "user" ; winget install --id=chrisant996.Clink -e -h --scope "machine""
+pwsh -c ^
+$packagesMachine = @( ^
+    'Microsoft.PowerShell', ^
+    'DEVCOM.JetBrainsMonoNerdFont', ^
+    'Sandboxie.Plus', ^
+    'Microsoft.VCRedist.2015+.x86', ^
+    'Microsoft.VCRedist.2015+.x64', ^
+    'Microsoft.VCRedist.2010.x64', ^
+    'Microsoft.VCRedist.2012.x86', ^
+    'Microsoft.VCRedist.2005.x86', ^
+    'Microsoft.VCRedist.2008.x64', ^
+    'Microsoft.VCRedist.2008.x86', ^
+    'Microsoft.VCRedist.2005.x64', ^
+    'Microsoft.VCRedist.2013.x86', ^
+    'Microsoft.VCRedist.2010.x86', ^
+    'Microsoft.VCRedist.2012.x64', ^
+    'Microsoft.VCRedist.2013.x64', ^
+    'Microsoft.VisualStudio.2022.Community', ^
+    'Implbits.HashTab', ^
+    'chrisant996.Clink' ^
+); ^
+$packagesUser = @( ^
+    'Microsoft.PowerToys', ^
+    'lin-ycv.EverythingPowerToys', ^
+    'Microsoft.DevHome', ^
+    'DevToys-app.DevToys', ^
+    'Microsoft.Sysinternals.RDCMan', ^
+    'Microsoft.Sysinternals.ProcessMonitor', ^
+    'Microsoft.Sysinternals.Autoruns', ^
+    'Microsoft.Sysinternals.BGInfo', ^
+    'Microsoft.Sysinternals.ProcessExplorer', ^
+    'Microsoft.Sysinternals.TCPView', ^
+    'Microsoft.WindowsTerminal', ^
+    'AdrienAllard.FileConverter', ^
+    'Valve.Steam', ^
+    'JustArchiNET.ArchiSteamFarm', ^
+    'calendulish.SteamToolsNG', ^
+    'Codeusa.SteamCleaner', ^
+    'TravisLane.SteamArtManager', ^
+    'StefansTools.SKTimeStamp', ^
+    'Ubisoft.Connect', ^
+    'GnuPG.Gpg4win', ^
+    'Proton.ProtonVPN', ^
+    'DuongDieuPhap.ImageGlass', ^
+    'Automattic.Simplenote' ^
+); ^
+foreach ($package in $packagesMachine) { ^
+    winget install --id=$package -e -h --scope 'machine' ^
+}; ^
+foreach ($package in $packagesUser) { ^
+    winget install --id=$package -e -h --scope 'user' ^
+}
