@@ -10,7 +10,6 @@ sc config PhoneSvc start=disabled
 sc config wisvc start=disabled
 sc config TabletInputService start=disabled
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-"%~dp0Remove-Edge.exe"
 schtasks /change /tn "Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents" /disable
 schtasks /change /tn "Microsoft\Windows\MemoryDiagnostic\RunFullMemoryDiagnostic" /disable
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v EnablePrefetcher /t REG_DWORD /d 0 /f
