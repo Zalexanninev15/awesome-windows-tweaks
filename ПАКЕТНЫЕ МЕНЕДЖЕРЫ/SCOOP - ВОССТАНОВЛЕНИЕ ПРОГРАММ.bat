@@ -47,6 +47,7 @@ $packages = @( ^
     'mc', ^
     'micro', ^
     'mingw', ^
+    'wireshark', ^
     'minisign', ^
     'nextcloud', ^
     'nmap', ^
