@@ -1,5 +1,12 @@
 # Awesome Windows Tweaks
 
+[![](https://img.shields.io/badge/OS-Windows-informational?logo=windows)](https://github.com/Zalexanninev15/awesome-windows-tweaks)
+[![](https://img.shields.io/badge/release-v1.7-blue.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks) 
+[![](https://img.shields.io/github/last-commit/Zalexanninev15/awesome-windows-tweaks/main.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks/commits/main)
+[![](https://img.shields.io/github/stars/Zalexanninev15/awesome-windows-tweaks.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks/stargazers)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://teletype.in/@zalexanninev15/donate)
+
 # Описание
 
 Невероятно большое количество скриптов, твиков, программ и всего остального для первоначальной настройки Windows. Просто скачайте репозиторий как архив и вы будете всегда иметь под рукой всё что нужно для почти любой настройки Windows 11 &amp; 10!
