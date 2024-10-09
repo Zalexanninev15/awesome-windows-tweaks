@@ -16,6 +16,7 @@ $packagesMachine = @( ^
     'Microsoft.VCRedist.2010.x86', ^
     'Microsoft.VCRedist.2012.x64', ^
     'Microsoft.VCRedist.2013.x64', ^
+    'Rustlang.Rust.GNU', ^
     'Microsoft.VisualStudio.2022.Community', ^
     'Implbits.HashTab', ^
     'chrisant996.Clink' ^
