@@ -34,7 +34,6 @@ $packagesUser = @( ^
     'Microsoft.Sysinternals.TCPView', ^
     'Microsoft.WindowsTerminal', ^
     'AdrienAllard.FileConverter', ^
-    'Valve.Steam', ^
     'JustArchiNET.ArchiSteamFarm', ^
     'calendulish.SteamToolsNG', ^
     'Codeusa.SteamCleaner', ^
@@ -52,3 +51,4 @@ foreach ($package in $packagesMachine) { ^
 foreach ($package in $packagesUser) { ^
     winget install --id=$package -e -h --scope 'user' ^
 }
+pause

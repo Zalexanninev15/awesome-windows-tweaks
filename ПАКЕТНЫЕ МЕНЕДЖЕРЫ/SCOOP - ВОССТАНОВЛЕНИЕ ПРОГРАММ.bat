@@ -1,6 +1,6 @@
 @echo off
-pwsh -CommandWithArgs "scoop bucket add main"
 pwsh -CommandWithArgs "scoop install git"
+pwsh -CommandWithArgs "scoop bucket add main"
 pwsh -CommandWithArgs "scoop bucket add games"
 pwsh -CommandWithArgs "scoop bucket add nonportable"
 pwsh -CommandWithArgs "scoop bucket add extras"
