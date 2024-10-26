@@ -1,11 +1,11 @@
 # Awesome Windows Tweaks
 
-[![](https://img.shields.io/badge/OS-Windows-informational?logo=windows)](https://github.com/Zalexanninev15/awesome-windows-tweaks)
+[![](https://img.shields.io/badge/OS-Windows-informational)](https://github.com/Zalexanninev15/awesome-windows-tweaks)
 [![](https://img.shields.io/badge/release-v1.7-blue.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks) 
 [![](https://img.shields.io/github/last-commit/Zalexanninev15/awesome-windows-tweaks/main.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks/commits/main)
 [![](https://img.shields.io/github/stars/Zalexanninev15/awesome-windows-tweaks.svg)](https://github.com/Zalexanninev15/awesome-windows-tweaks/stargazers)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://teletype.in/@zalexanninev15/donate)
+[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://z15.neocities.org/donate)
 
 # Описание
 
