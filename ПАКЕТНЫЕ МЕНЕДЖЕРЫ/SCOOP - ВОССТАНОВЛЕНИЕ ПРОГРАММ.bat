@@ -64,7 +64,6 @@ $packages = @( ^
     'staxrip', ^
     'steam-achievement-manager', ^
     'ttyd', ^
-    'rustrover', ^
     'ventoy', ^
     'vhs', ^
     'wget', ^
