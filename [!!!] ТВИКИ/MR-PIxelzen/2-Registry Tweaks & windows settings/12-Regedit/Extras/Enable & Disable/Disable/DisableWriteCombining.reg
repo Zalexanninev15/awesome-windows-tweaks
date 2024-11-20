@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00																										made by konex#8100
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
+
+"DisableWriteCombining"=dword:00000001
+
+

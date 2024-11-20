@@ -1,0 +1,52 @@
+Windows Registry Editor Version 5.00
+
+; I comment on each tweak.
+
+; Scancode map is these days handled by your mouse driver software. Windows typically overrides it after a reboot, unless there is no external driver detected.
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,03,00,00,00,00,00,5B,E0,00,00,5C,E0,00,00,00,00
+
+; Raw input / forcibly use enhance pointer precision (for older games without ram input option/implementation) we force the acceleration curve to be 1 to 1, basically disabling acceleration.
+;This pplies only in case you have the exploer UI DPI set to 100%.
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+
+"MouseSensitivity"="10"
+"SmoothMouseXCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	C0,CC,0C,00,00,00,00,00,\
+	80,99,19,00,00,00,00,00,\
+	40,66,26,00,00,00,00,00,\
+	00,33,33,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	00,00,38,00,00,00,00,00,\
+	00,00,70,00,00,00,00,00,\
+	00,00,A8,00,00,00,00,00,\
+	00,00,E0,00,00,00,00,00
+
+; Not needed in Windows 2004 (20H1)+.
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+; Disable checkbox 'Enhance pointer precision' for desktop and older games. It is basically the worst kind of acceleration. Overall it's matter of taste, in theory you also can work perfectly fine letting it enabled.
+Mouse drivers from Glorious and Razer typically already covering this part perfectly well.
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+; Increases windows desktop cursor response.
+; The cursor rate depends on various factors. It's NOT advised to use this tweak anymore since 1909+.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed]
+"CursorSensitivity"=dword:00002710
+"CursorUpdateInterval"=dword:00000001
+"IRRemoteNavigationDelta"=dword:00000001
+
+; This will change the scroll wheel steps from default 3 to 6.
+; Matter of taste, gaming wise not needed.
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"WheelScrollChars"="3"
+"WheelScrollLines"="3"

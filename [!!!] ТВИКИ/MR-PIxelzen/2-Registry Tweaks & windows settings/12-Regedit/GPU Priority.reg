@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00		
+;by KHYX
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="False"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000012
+"Priority"=dword:00000002
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+"Latency Sensitive"="True"

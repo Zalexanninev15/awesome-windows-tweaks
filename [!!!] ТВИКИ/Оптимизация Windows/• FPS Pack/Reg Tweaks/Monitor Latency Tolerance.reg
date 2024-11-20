@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00     
+
+[HKLM\SYSTEM\CurrentControlSet\Services\DXGKrnl]
+"MonitorLatencyTolerance"=dword:00000000
+
+[HKLM\SYSTEM\CurrentControlSet\Services\DXGKrnl]
+"MonitorRefreshLatencyTolerance"=dword:00000000

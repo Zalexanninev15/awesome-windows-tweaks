@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00		by KHYX
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="0"

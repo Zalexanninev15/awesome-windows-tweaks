@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; от iosiph-a с любовью жи ес
+
+
+; Не будут устанавливаться приложения со Store
+; будут проблемы например с установкой панеля управления nvidia при переустановке драйвера
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mpssvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BFE]
+"Start"=dword:00000004

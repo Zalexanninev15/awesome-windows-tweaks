@@ -29,6 +29,7 @@ $packages = @( ^
     'fastfetch', ^
     'hugo-extended', ^
     'hokus', ^
+	'simplewall', ^
     'ffmpeg', ^
     'github', ^
     'goggalaxy', ^

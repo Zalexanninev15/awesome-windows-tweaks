@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+;Enable Print Spooler
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler]
+"Start"=dword:00000002
+
+; Enable Printer Extensions and Notifications
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PrintNotify]
+"Start"=dword:00000003

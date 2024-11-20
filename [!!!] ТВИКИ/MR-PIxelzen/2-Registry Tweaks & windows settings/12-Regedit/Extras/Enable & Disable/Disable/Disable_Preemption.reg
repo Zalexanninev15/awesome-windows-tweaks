@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00																		made by konex#8100
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
+
+"DisablePreemption"=dword:00000001
+
+"DisableCudaContextPreemption"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
+
+"EnablePreemption"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers
+
+"PlatformSupportMiracast"=dword:00000000

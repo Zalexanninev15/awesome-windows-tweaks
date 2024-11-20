@@ -1,0 +1,61 @@
+
+--OFFLINE-
+
+INTEL/NVIDIA low 720p 12.04ms
+
+INTEL/NVIDIA low 4k 16.80ms
+
+INTEL/NVIDIA low 4k reflex on+boost off 21.40ms
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+AMD/AMD in match low 720p 11.75ms
+
+--OFFLINE-
+
+AMD/AMD low 720p 9.71ms 
+
+AMD/AMD low 720p low fov 9.70ms
+
+AMD/AMD low 720p high priority N/A 
+
+AMD/AMD low 720p cpu 0 disabled N/A
+
+AMD/AMD low 720p SMT/HT disabled 9.81ms
+
+AMD/AMD low 720p launch options on/off N/A
+
+AMD/AMD low 1080p 10.23ms 
+
+AMD/AMD low 1440p 10.74ms
+
+AMD/AMD low 4k 16.19ms
+
+AMD/AMD low 4k anti lag on 15.11ms
+
+AMD/AMD low 1080p retest 9.78ms
+
+AMD/AMD med 1080p 10.03ms
+
+AMD/AMD max 1080p 11.42ms
+
+AMD/AMD each setting N/A
+
+AMD/AMD low 1080p stable fps cap 11.51ms
+
+AMD/AMD low 1080p stable fps cap freesync 11.61ms
+
+AMD/AMD low 1080p stable fps cap BFI 10.68 (hard to measure)
+
+AMD/AMD low 1080p stable fps cap scan line sync 11.54ms
+
+
+
+
+
+
+
+
+
+

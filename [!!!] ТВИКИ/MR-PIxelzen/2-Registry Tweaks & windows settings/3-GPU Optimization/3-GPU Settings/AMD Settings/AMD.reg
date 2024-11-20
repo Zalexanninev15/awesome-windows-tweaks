@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]
+"DisableDMACopy"=dword:00000001
+"DisableBlockWrite"=dword:00000000
+"StutterMode"=dword:00000000
+"EnableUlps"=dword:00000000
+"PP_SclkDeepSleepDisable"=dword:00000001
+"PP_ThermalAutoThrottlingEnable"=dword:00000000
+"DisableDrmdmaPowerGating"=dword:00000001
+"KMD_EnableComputePreemption"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\UMD]
+"Main3D_DEF"="1"
+"Main3D"=hex:31,00
+"FlipQueueSize"=hex:31,00
+"ShaderCache"=hex:32,00
+"Tessellation_OPTION"=hex:32,00
+"Tessellation"=hex:31,00
+"VSyncControl"=hex:30,00
+"TFQ"=hex:32,00
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\DAL2_DATA__2_0\DisplayPath_4\EDID_D109_78E9\Option]
+"ProtectionControl"=hex:01,00,00,00,01,00,00,00

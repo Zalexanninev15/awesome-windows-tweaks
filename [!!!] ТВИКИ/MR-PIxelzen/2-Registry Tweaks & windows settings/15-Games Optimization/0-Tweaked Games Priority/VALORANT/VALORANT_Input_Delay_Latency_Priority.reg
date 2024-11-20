@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\VALORANT-Win64-Shipping.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000004
+"IoPriority"=dword:00000004
+"TCPNoDelay"=dword:00000001
+"TCPackFrequency"=dword:00000001
+"ThreadPriority"=dword:0000001f
+
+
+
+
+
+

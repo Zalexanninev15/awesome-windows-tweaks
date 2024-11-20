@@ -1,2 +1,0 @@
-Utils\busybox.exe wget https://download.fosshub.com/Protected/expiretime=1721121743;badurl=aHR0cHM6Ly93d3cuZm9zc2h1Yi5jb20vcUJpdHRvcnJlbnQuaHRtbA==/4e297261f19ddae51a52b456672da0f953292137ed96de509347874300635d1b/5b8793a7f9ee5a5c3e97a3b2/665371e006dece042d3e176d/qbittorrent_4.6.5_x64_setup.exe
-start qbittorrent_4.6.5_x64_setup.exe

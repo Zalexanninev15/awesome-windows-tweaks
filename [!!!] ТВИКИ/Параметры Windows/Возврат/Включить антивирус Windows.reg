@@ -1,0 +1,39 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     
+
+; от iosiph-a с любовью жи ес
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+"Start"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=-
+"DisableRoutinelyTakingAction"=-
+"ServiceKeepAlive"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableBehaviorMonitoring"=-
+"DisableIOAVProtection"=-
+"DisableOnAccessProtection"=-
+"DisableRealtimeMonitoring"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting]
+"DisableEnhancedNotifications"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=-
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoToastApplicationNotification"=-
+"NoToastApplicationNotificationOnLockScreen"=-

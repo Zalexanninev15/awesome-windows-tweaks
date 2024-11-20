@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FortniteClient-Win64-Shipping.exe]
+"UseLargePages"=dword:00000001
+
+
+;Aviso,esse regedit foi feito pelo Joaoc (Boost do Server),deem créditos sempre assim como vou dar agora.
+;Código feito em base do discord oficial do Revision,Fr33thy e alguns tweakers. Focado e FPS para fortnite com um pouco de tweaks de latência.

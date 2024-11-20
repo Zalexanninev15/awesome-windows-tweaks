@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\Microsoft\Siuf\Rules]
-"NumberOfSIUFInPeriod"=dword:00000000
-"PeriodInNanoSeconds"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
-"DoNotShowFeedbackNotifications"=dword:00000001

@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+
+; Disable Diagnostic System Host
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
+"Start"=dword:00000004

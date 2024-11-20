@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00	---Registry File By Techie savi								
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control]
+"SvcHostSplitThresholdInKB"=dword:12582912
+

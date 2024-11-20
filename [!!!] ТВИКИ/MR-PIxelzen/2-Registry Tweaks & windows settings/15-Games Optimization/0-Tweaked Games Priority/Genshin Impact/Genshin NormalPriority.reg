@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+Made by BareFox
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GenshinImpact.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000002

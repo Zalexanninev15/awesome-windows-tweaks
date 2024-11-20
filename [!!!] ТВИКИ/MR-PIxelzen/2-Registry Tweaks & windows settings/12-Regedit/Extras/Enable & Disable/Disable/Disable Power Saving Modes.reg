@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+;NOTE!! I RECOMMEND TO USE THIS TWEAK ONLY ON PCs, IF YOU ARE A LAPTOP USER USING THIS TWEAK WILL DRAIN YOUR BATTERY LIFE.
+;(IF YOU DON'T MIND A SHORTER BATTERY LIFE, THEN IT'S OKAY TO DISABLE)
+
+;Power throttling that limits the apps from draining your battery or using an excessive amount of power.
+;Hibernate mode saves all of your open documents and running apps while turning off the PC and resumes everything where you left off when you wake your PC/Laptop up.
+;The power saving modes reduces the performance by throttling the CPU/GPU clock speed.
+;By disabling this, you will be able to gain more frames per second. 
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabledDefault"=dword:00000000
+
+!MADE BY OGTech!

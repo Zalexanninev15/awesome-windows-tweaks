@@ -1,0 +1,7 @@
+The latest version of NVIDIA Inspector on latest drivers doesn't support changing SILK settings or Low Latency settings.
+
+The Tweaks Pack will unlock these settings in NVIDIA Control Panel for you.
+
+Once the first step of the pack completes, you can go ahead and open NVIDIA Control Panel and set:
+• SILK to OFF
+• Low Latency to Ultra

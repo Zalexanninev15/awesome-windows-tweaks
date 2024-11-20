@@ -1,0 +1,10 @@
+sc stop aspnet_state
+sc stop clr_optimization_v2.0.50727_32
+sc stop clr_optimization_v2.0.50727_64
+sc stop clr_optimization_v4.0.30319_32
+sc stop clr_optimization_v4.0.30319_64
+sc delete aspnet_state
+sc delete clr_optimization_v2.0.50727_32
+sc delete clr_optimization_v2.0.50727_64
+sc delete clr_optimization_v4.0.30319_32
+sc delete clr_optimization_v4.0.30319_64

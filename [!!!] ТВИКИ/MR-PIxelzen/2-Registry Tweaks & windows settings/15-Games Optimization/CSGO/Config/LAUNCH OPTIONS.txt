@@ -1,0 +1,1 @@
+-novid -console -tickrate 128 +fps_max 400 +net_graph 1 -allow_third_party_software +cl_hideserverip 1 +cl_invites_only_friends 1

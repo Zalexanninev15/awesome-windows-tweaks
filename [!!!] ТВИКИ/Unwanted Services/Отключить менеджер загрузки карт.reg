@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker]
+"Start"=dword:00000004

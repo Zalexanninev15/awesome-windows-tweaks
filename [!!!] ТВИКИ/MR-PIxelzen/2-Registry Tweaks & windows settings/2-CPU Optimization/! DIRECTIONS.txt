@@ -1,0 +1,5 @@
+1. Double click on the .reg files, click yes then ok. 
+2. Right click and run the .bat file as admin. 
+3. Right click and run UnparkCPU as admin, select the powerplan u want to use, set as active, then click unpark all, then click apply. 
+4. RESTART YOUR PC!
+

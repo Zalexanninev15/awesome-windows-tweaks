@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000
+"EnableInstallerDetection"=dword:00000000
+"EnableLUA"=dword:00000000
+"EnableSecureUIAPaths"=dword:00000000
+"EnableVirtualization"=dword:00000000
+"FilterAdministratorToken"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000

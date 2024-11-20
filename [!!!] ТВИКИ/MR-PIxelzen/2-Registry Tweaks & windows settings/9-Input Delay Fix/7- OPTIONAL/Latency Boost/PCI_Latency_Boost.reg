@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\VEN_10DE&DEV_134B&CC_0302]
+@="devcon deaktiviert"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\PCI\VEN_11AB&DEV_2B38&CC_0200]
+@="devcon deaktiviert"

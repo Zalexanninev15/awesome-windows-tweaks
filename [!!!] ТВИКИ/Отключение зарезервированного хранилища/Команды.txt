@@ -1,0 +1,5 @@
+Отключить зарезервированное хранилище: 
+DISM /Online /Set-ReservedStorageState /State:Disabled
+
+Включить зарезервированное хранилище:
+DISM.exe /Online /Set-ReservedStorageState /State:Enabled

@@ -1,3 +1,9 @@
+~~~ В ПЕРВУЮ ОЧЕРЕДЬ ~~~
+Устанавливаем PowerShell 7 для работы скриптов:
+https://aka.ms/powershell-release?tag=stable
+Ищем окончание "-win-x64.msi" в Assets
+~~~
+
 Устанавливаем scoop:
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
@@ -9,8 +15,3 @@ https://pyatilistnik.org/install-winget-windows-package-manager/
 Через WinGet: winget install --exact --id SomePythonThings.WingetUIStore --source winget
 
 ВСЕ BAT-СКРИПТЫ ЗАПУСКАТЬ СТРОГО ОТ АДМИНИСТРАТОРА!!!
-
-~~~ ЕСЛИ ЮЗАЕТЕ БЕЗ СКРИПТА ДЛЯ WINGET ~~~
-Устанавливаем PowerShell 7 для работы скриптов:
-https://aka.ms/powershell-release?tag=stable
-Ищем окончание "-win-x64.msi" в Assets

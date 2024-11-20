@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; от iosiph-a с любовью жи ес
-
-; уменьшение времени при завершении работы для сохранения данных
-; по умолчанию стоит "12000" тоесть 12 секунд
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
-"WaitToKillServiceTimeout"="12000"

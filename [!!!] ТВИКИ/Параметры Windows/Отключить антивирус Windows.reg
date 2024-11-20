@@ -1,0 +1,39 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                  
+
+; от iosiph-a с любовью жи ес
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+"DisableRoutinelyTakingAction"=dword:00000001
+"ServiceKeepAlive"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableBehaviorMonitoring"=dword:00000001
+"DisableIOAVProtection"=dword:00000001
+"DisableOnAccessProtection"=dword:00000001
+"DisableRealtimeMonitoring"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting]
+"DisableEnhancedNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoToastApplicationNotification"=dword:00000001
+"NoToastApplicationNotificationOnLockScreen"=dword:00000001

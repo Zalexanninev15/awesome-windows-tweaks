@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+;Enable Xbox Live Networking Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc]
+"Start"=dword:00000003
+
+;Enable Xbox Live Game Save
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblGameSave]
+"Start"=dword:00000003
+
+;Enable Xbox Accessory Management Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxGipSvc]
+"Start"=dword:00000003
+
+;Enable Xbox Live Auth Manager
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblAuthManager]
+"Start"=dword:00000003
+

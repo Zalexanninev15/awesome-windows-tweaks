@@ -1,0 +1,2 @@
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Delivery\Optimization\Config" /v "DODownloadMode" /t REG_DWORD /d 0 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\Delivery\Optimization" /v "DODownloadMode" /t REG_DWORD /d 0 /f

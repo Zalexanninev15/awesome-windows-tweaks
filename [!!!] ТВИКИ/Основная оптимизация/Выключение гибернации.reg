@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; от iosiph-a с любовью жи ес
+
+; Отключить быстрый запуск
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000
+
+; Отключение гибернации
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000

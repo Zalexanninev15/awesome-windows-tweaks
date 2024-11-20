@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Remote Assistance]
-"CreateEncryptedOnlyTickets"=dword:00000000
-"fAllowFullControl"=dword:00000000
-"fAllowToGetHelp"=dword:00000000
-"fEnableChatControl"=dword:00000000
-

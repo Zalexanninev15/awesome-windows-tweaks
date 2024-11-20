@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"LatencyToleranceDefault"=dword:00000000
+"LatencyToleranceFSVP"=dword:00000000
+"LatencyToleranceIdleResiliency"=dword:00000000
+"LatencyToleranceVSyncEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"LatencyToleranceVSyncEnabled"=dword:00000000
+"LatencyToleranceIdleResiliency"=dword:00000000
+"LatencyToleranceFSVP"=dword:00000000
+"LatencyToleranceDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"LatencyToleranceDefault"=dword:00000000
+"LatencyToleranceFSVP"=dword:00000000
+"LatencyToleranceIdleResiliency"=dword:00000000
+"LatencyToleranceVSyncEnabled"=dword:00000000

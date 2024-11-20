@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00      Reg By youtube.com/panjno
+
+
+[HKEY_CURRENT_USER\System\GameConfigStore]
+
+"GameDVR_Enabled"=dword:00000001

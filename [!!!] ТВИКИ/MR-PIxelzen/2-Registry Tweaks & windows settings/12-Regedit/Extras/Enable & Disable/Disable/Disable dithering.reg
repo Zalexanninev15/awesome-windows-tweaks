@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Test
+; https://github.com/jursonovicst/gradient
+
+
+; It's wrong that this is controlled by atikmdag.sys!
+; DP = DisplayPort
+; HDMI = HDMI
+; TMDS = DVI
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000]
+"DP_DisableDither"=dword:00000000
+"Embedded_DisableDither"=dword:00000001
+"HDMI_DisableDither"=dword:00000000
+"TMDS_DisableDither"=dword:00000000
+

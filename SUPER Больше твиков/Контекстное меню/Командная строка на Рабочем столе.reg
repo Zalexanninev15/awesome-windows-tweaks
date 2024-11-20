@@ -1,9 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\DesktopBackground\Shell\cmd]
-@="Командная строка"
-"Position"="bottom"
-"Icon"="imageres.dll,311"
-
-[HKEY_CLASSES_ROOT\DesktopBackground\Shell\cmd\command]
-@="cmd.exe"

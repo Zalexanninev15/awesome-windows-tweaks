@@ -1,0 +1,37 @@
+{
+  "switches": [
+    "nv-gfn-accelerator=dx9",
+    "nv-gpu-accel=true",
+    "nv-gfn-async-renderer=false",
+    "nv-custom-black-window=true",
+    "nv-def-window-size=1248,800",
+    "nv-min-window-size=900,600",
+    "nv-shared-storage-name=GeForceNOW",
+    "nv-ipc-type=mallclient",
+    "nv-url-relative=../Mall/index.html",
+    "nv-streamer-url-relative=../Mall/index.html",
+    "nv-plugin-folder-relative=./cef/common;./cef/client",
+    "nv-plugin-dependencies-relative=./dependencies",
+    "nv-self-update-path=Gfnpc_Downloader\\gfnupdate.json",
+    "nv-update-as-user=true",
+    "nv-installer-flags=-n -custominvokerid:7",
+    "nv-background-color=0xFF000000",
+    "nv-localization-path=GeForceNOW\\Mall\\assets\\i18n",
+    "nv-app-hidpi=true",
+    "nv-logging-level=info",
+    "nv-startup-autoupdate=false",
+    "nv-app-url-scheme=geforcenow",
+    "nv-gfn-streamer=true",
+    "nv-sdl-resizable=true",
+    "nv-sdl-iohid-configurable=true",
+    "nv-sdl-hidpi=true",
+    "nv-cmd-storage-path=\\..\\GeForceNOW",
+    "nv-container=GeForceNOWContainer.exe",
+    "nv-container-plugin-path=nvc/localuser",
+    "nv-container-options=-l 3",
+    "nv-app-name=GeForceNOW",
+    "nv-nvtelemetry-config-path=data\\configs\\NvTelemetry.json",
+    "nv-telemetry-api-binary-path=NvTelemetry"
+  ]
+
+}

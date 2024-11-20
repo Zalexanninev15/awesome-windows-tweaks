@@ -1,0 +1,317 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// USER SETTINGS
+//
+// Notes:
+// The user settings found in players/options.iw9 will be applied on boot.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Version info
+version = 5
+
+// 
+//System
+//
+
+// Set a target fraction of your PC's video memory to be used by the game 
+VideoMemoryScale = "0.85" // 0 to 2
+
+// Thread count for handling the job queue 
+RendererWorkerCount = "16" // -1 to 16
+
+// Allows non-hardware settings to be synced in with the cloud 
+ConfigCloudStorageEnabled = "0" // 0 or 1
+
+// Allow campaign savegame to be synced in with the cloud 
+ConfigCloudSavegameEnabled = "0" // 0 or 1
+
+// Indicates whether recommended settings have been set, will reset settings to recommended if set to 0 
+RecommendedSet = "1" // 0 or 1
+
+// 
+//Audio
+//
+
+// Using push to talk to activate microphone. 
+VoicePushToTalk = "1" // 0 or 1
+
+// Audio mix 
+AudioMix = "4" // 0 to 9
+
+// Adjusts overall volume of the game 
+Volume = "1" // 0 to 1
+
+// Adjusts the volume for character dialogues and announcer voices 
+VoiceVolume = "1" // 0 to 1
+
+// Adjusts the volume of the music 
+MusicVolume = "0" // 0 to 1
+
+// Adjusts the volume of the sound effects 
+EffectsVolume = "1" // 0 to 1
+
+// Adjusts the volume of hit markers 
+HitMarkersVolume = "1" // 0 to 1
+
+// Sets whether audio should be muted when the game window is out of focus 
+MuteAudioWhileOutOfFocus = "0" // 0 or 1
+
+// Licensed Music Volume 
+LicensedMusicVOlume = "0" // 0 to 1
+
+// War Tracks Volume 
+WarTracksVolume = "0" // 0 to 1
+
+// 
+//Gameplay
+//
+
+//Apply custom framerate limit 
+CapFps = "0" // 0 or 1
+
+// Custom maximum frames per second when in a match 
+MaxFpsInGame = "300" // 30 to 300
+
+// Custom maximum frames per second when in menus 
+MaxFpsInMenu = "120" // 30 to 300
+
+// Custom maximum frames per second when game is out of focus 
+MaxFpsOutOfFocus = "30" // 5 to 300
+
+// Adds blur on out of focus areas when aiming down sights 
+DepthOfField = "0" // 0 or 1
+
+// Adjusts the strength of the visual noise applied in-game 
+FilmGrain = "0" // 0 to 1
+
+// 
+//Display
+//
+
+// Fullscreen mode 
+DisplayMode = "Fullscreen" //  Windowed, Fullscreen, Fullscreen borderless window, or Fullscreen borderless extended window
+
+// Constrain mouse to game window 
+ConstrainMouse = "0" // 0 or 1
+
+// Fullscreen mode preference 
+PreferredDisplayMode = "1" // 1 to 3
+
+// Window X position 
+WindowX = "-32768" // -32768 to 32767
+
+// Window Y position 
+WindowY = "-32768" // -32768 to 32767
+
+// Window width 
+WindowWidth = "640" // 0 to 32767
+
+// Window height 
+WindowHeight = "400" // 0 to 32767
+
+// Window is maximized on boot 
+WindowMaximized = "0" // 0 or 1
+
+// Monitor name of the monitor used to display the game 
+Monitor = "XB273U GX" // any text
+
+// Refresh rate of used monitor 
+RefreshRate = "270.000" // any text
+
+// Synchronizes framerate with refresh rate to prevent screen tearing issues 
+VSync = "0" // 0 to 4
+
+// Vsync while in menus only 
+VSyncInMenu = "0" // 0 or 1
+
+// Fullscreen Resolution 
+Resolution = "2560x1440" // any text
+
+// Percentage of window resolution that the 3D scene renders at. value set by the user. can be smaller than the actual. 
+ResolutionMultiplier = "100" // 0 to 200
+
+// Force specific aspect ratio independent of window aspect ratio 
+AspectRatio = "wide 16:9" //  auto, standard, 5:4, wide 16:10, wide 16:9, wide 18:9, wide 19.5:9, wide 21:9, or wide 32:9
+
+// Color spaces for monitor output 
+DisplayGamma = "BT709_BT1886" //  BT709_sRGB, or BT709_BT1886
+
+// Enable focused mode 
+FocusedMode = "0" // 0 or 1
+
+// Set overlay opacity for the focused mode 
+FocusedModeOpacity = "0" // 0 to 1
+
+// Enable Nvidia low latency mode. Boost mode request maximum GPU clock frequency regardless of workload 
+NvidiaReflex = "Enabled + boost" //  Disabled, Enabled, or Enabled + boost
+
+// Enables the async compute for specific cases 
+AsyncCompute = "1" // 0 or 1
+
+// 
+//Graphics
+//
+
+//Preferred GPU if multiple GPU system 
+GPUName = "AMD Radeon RX 6900 XT" // any text
+
+// The maximum distance at which clutter models are rendered. 
+ClutterMaxDist = "100" // 100 to 10000
+
+// Texture quality level, high to low (higher numbers means lower resolution) 
+TextureQuality = "3" // 0 to 3
+
+// Texture filtering quality level 
+TextureFilter = "TEXTURE_FILTER_NEAREST" //  TEXTURE_FILTER_NEAREST, TEXTURE_FILTER_LINEAR, TEXTURE_FILTER_ANISO2X, TEXTURE_FILTER_ANISO4X, TEXTURE_FILTER_ANISO8X, TEXTURE_FILTER_ANISO16X, or TEXTURE_FILTER_CMP
+
+// Particle Quality quality level 
+ParticleQualityLevel = "very low" //  very low, low, medium, or high
+
+// Particle Lighting quality level 
+PixelPerLightmapTexel = "1" // 1 to 256
+
+// Particle Resolution quality level 
+ParticuleResolution = "0" // 0 or 1
+
+// Show bullet impacts 
+BulletImpacts = "0" // 0 or 1
+
+// Tessellation quality level 
+Tessellation = "0_Off" //  0_Off, 1_Near, or 2_All
+
+// Low detail models at a high distance 
+ForceLodDistanceQualityLow = "0" // 0 or 1
+
+// High detail models at a high distance 
+LodDistanceQuality = "0" // 0 or 1
+
+// Models quality 
+LodModelQuality = "Drop Base Quality LODs" //  Drop None, Drop High Quality LODs, or Drop Base Quality LODs
+
+// Enable high quality motion blur 
+HighQualityMotionBlur = "0" // 0 or 1
+
+// Corpses culling threshold 
+CorpsesCullingThreshold = "0.5" // 0.5 to 1
+
+// Catmull Clark subdivision level 
+SubdivisionLevel = "0" // 0 to 8
+
+// Ui Quality 
+UiQuality = "Auto" //  1080P, 4K, or Auto
+
+// World Streaming Quality 
+WorldStreamingQuality = "0" // 0 to 1
+
+// Activate dynamic scene resolution 
+DynamicSceneResolution = "0" // 0 or 1
+
+// Target frame time in ms for dynamic scene resolution. 
+DynamicSceneResolutionTarget = "0" // 0 to 100
+
+// Absolute target resolution 
+AbsoluteTargetResolution = "none" //  540P, 640P, 720P, 900P, 1080P, 1440P, native, or none
+
+// Use large physical textures 
+VirtualTexturingLargeMemoryMode = "0" // 0 or 1
+
+// Volumetric quality 
+VolumetricQuality = "QUALITY_LOW" //  QUALITY_LOW, QUALITY_MEDIUM, or QUALITY_HIGH
+
+// Screen Space Shadow quality level 
+ScreenSpaceShadowQuality = "Off" //  Off, Low, or High
+
+// Shadow resolution quality level 
+ShadowMapResolution = "Very Low  (384)" //  Very Low  (384), Low       (384), Normal    (512), High      (768), Extra     (1024), or Ultra     (2048)
+
+// Quality level of shadows from the sun at a distance 
+SunShadowCascade = "Low    (1 cascade)" //  Low    (1 cascade), or Normal (2-3 cascades)
+
+// Use spot shadow cache to improve framerate 
+CacheSpotShadow = "Enabled" //  Disabled, Enabled, or Preserve Updates
+
+// Adjust size of Spot Shadow Cache 
+SpotShadowCacheSize = "0" // 0 to 3
+
+// Use cache sun shadow 
+CacheSunShadow = "1" // 0 or 1
+
+// Quality level of spot shadow 
+SpotShadowQualityLevel = "Low" //  Low, Medium, or High
+
+// Particle Lighting Quality 
+ParticleLighting = "0" // 0 to 5
+
+// Screen-space ambient occlusion method 
+SSAOTechnique = "Off" //  Off, GTAO, MDAO, or GTAO & MDAO
+
+// Screen-space reflection mode 
+SSRMode = "Off" //  Off, Deferred LQ, or Deferred HQ
+
+// GTAO Quality level 
+GTAOQuality = "R_GTAO_QUALITY_LOW" //  R_GTAO_QUALITY_LOW, R_GTAO_QUALITY_MEDIUM, R_GTAO_QUALITY_HIGH, or R_GTAO_QUALITY_ULTRA
+
+// SMAA Quality level 
+SMAAQuality = "SMAA_QUALITY_LOW" //  SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, or SMAA_QUALITY_ULTRA
+
+// User preferred anti-aliasing technique 
+AATechniquePreferred = "SMAA T2x" //  SMAA T2x, Filmic SMAA T2x, or DLSS
+
+// Reflection probe relighting update stages 
+ReflectionProbeRelighting = "1" // 1 to 4
+
+// How many lights can receive dynamic shadows 
+RoundRobinPrioritySpotShadowsMax = "0" // 0 to 16
+
+// Static sunshadow moment clipmap resolution 
+StaticSunshadowClipmapResolution = "0" // 0 or bigger
+
+// DLSS performance mode 
+DLSSPerfMode = "0" // 0 or bigger
+
+// DLSS Sharpness. 
+DLSSSharpness = "1" // -1 to 1
+
+// Enable AMD FidelityFX Super Resolution 
+AMDSuperResolution = "CAS - Sharpening only" //  Off, CAS - Sharpening only, or AMD FSR 1.0
+
+// AMD FidelityFX Super Resolution quality 
+AMDSuperResolutionQuality = "Maximum Performance" //  Maximum Performance, Balanced, Maximum Quality, or Ultra Quality
+
+// Strength for Contrast Adaptive Sharpening (CAS) 
+AMDContrastAdaptiveSharpeningStrength = "0.2" // 0 to 1
+
+// Enable NVIDIA Image Scaling 
+NVIDIAImageScaling = "0" // 0 or 1
+
+// NVIDIA Image Scaling quality 
+NVIDIAImageScalingQuality = "Maximum Performance" //  Maximum Performance, Balanced, Maximum Quality, Ultra Quality, or Custom
+
+// NVIDIA Image Scaling sharpness 
+NVIDIAImageScalingSharpness = "1" // 0 to 1
+
+// Strength of the filmic visual noise filter 
+FilmicStrength = "0" // 0 to 1
+
+// Set HDR activation mode. Option only takes effect on HDR Display. 
+HDR = "Off" //  Off, On, or Automatic
+
+// Select the shader quality setting 
+ShaderQuality = "Low" //  Default, Medium, or Low
+
+// Deferred physics quality level 
+DeferredPhysicsQuality = "Low Quality" //  Low Quality, Medium Quality, High Quality, or Developer
+
+// 
+//Interface
+//
+
+// Skip introduction movie that plays when game is started 
+SkipIntro = "1" // 0 or 1
+
+// 
+//Mouse and Gamepad
+//
+
+// Set minimum delay in milliseconds between valid mouse wheel inputs 
+WeaponCycleDelay = "0" // 0 to 5000
+

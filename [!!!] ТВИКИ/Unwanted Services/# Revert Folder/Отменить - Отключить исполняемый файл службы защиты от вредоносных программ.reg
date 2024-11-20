@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+;Disable Windows Defender Antivirus Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+"Start"=dword:00000002
+
+;Disable Windows Defender Security Center Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]
+"Start"=dword:00000003
+
+;Disable Windows Defender Antivirus Network Inspection Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdNisSvc]
+"Start"=dword:00000003
+
+;Disable Windows Defender Advanced Threat Protection Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense]
+"Start"=dword:00000003
+
+;Disable Security Center
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=-
+"DisableRoutinelyTakingAction"=-
+"ServiceKeepAlive"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableBehaviorMonitoring"=-
+"DisableIOAVProtection"=-
+"DisableOnAccessProtection"=-
+"DisableRealtimeMonitoring"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Reporting]
+"DisableEnhancedNotifications"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=-
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoToastApplicationNotification"=-
+"NoToastApplicationNotificationOnLockScreen"=-

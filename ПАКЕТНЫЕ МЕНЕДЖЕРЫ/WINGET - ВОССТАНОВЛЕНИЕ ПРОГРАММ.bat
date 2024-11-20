@@ -26,6 +26,7 @@ $packagesUser = @( ^
     'lin-ycv.EverythingPowerToys', ^
     'Microsoft.DevHome', ^
     'DevToys-app.DevToys', ^
+	'qBittorrent.qBittorrent', ^
     'Microsoft.Sysinternals.RDCMan', ^
     'Microsoft.Sysinternals.ProcessMonitor', ^
     'Microsoft.Sysinternals.Autoruns', ^
@@ -34,7 +35,6 @@ $packagesUser = @( ^
     'Microsoft.Sysinternals.TCPView', ^
     'Microsoft.WindowsTerminal', ^
     'AdrienAllard.FileConverter', ^
-    'JustArchiNET.ArchiSteamFarm', ^
     'calendulish.SteamToolsNG', ^
     'Codeusa.SteamCleaner', ^
     'TravisLane.SteamArtManager', ^

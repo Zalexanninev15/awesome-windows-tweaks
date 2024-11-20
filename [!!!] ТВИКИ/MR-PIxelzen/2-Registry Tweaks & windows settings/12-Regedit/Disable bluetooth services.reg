@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+;Registry File By Adamx
+;Disable Bluetooth Audio Gateway Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService]
+"Start"=dword:00000004
+
+;Disable Bluetooth Support Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv]
+"Start"=dword:00000004

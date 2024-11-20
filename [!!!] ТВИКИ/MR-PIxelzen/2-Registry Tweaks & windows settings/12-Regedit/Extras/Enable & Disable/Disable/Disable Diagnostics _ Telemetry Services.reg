@@ -1,0 +1,30 @@
+Windows Registry Editor Version 5.00                                                                                                                                                                                     youtube.com/AdamxYT
+
+; Registry File By Adamx
+; Disable Connected User Experiences and Telemetry
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+
+; Disable dmwappushservice
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
+"Start"=dword:00000004
+
+; Disable Diagnostic Execution Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagsvc]
+"Start"=dword:00000004
+
+; Disable Diagnostic Policy Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DPS]
+"Start"=dword:00000004
+
+; Disable Microsoft (R) Diagnostics Hub Standard Collector Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service]
+"Start"=dword:00000004
+
+; Disable Diagnostic Service Host
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiServiceHost]
+"Start"=dword:00000004
+
+; Disable Diagnostic System Host
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
+"Start"=dword:00000004

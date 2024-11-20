@@ -1,0 +1,36 @@
+Windows Registry Editor Version 5.00																								made by konex#8100
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\StartMenuExperienceHost.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\StartMenu.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\lsass.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dwm.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppsvc.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\csrss.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000004
+"IoPriority"=dword:00000002
+"PagePriority"=dword:00000005
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sppsvc.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000001
+"IoPriority"=dword:00000000
+"PagePriority"=dword:00000000

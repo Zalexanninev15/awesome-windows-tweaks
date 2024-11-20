@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00       Reg By youtube.com/panjno
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+
+"value"=dword:00000001
+

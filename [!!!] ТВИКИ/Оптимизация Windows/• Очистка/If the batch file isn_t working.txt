@@ -1,0 +1,9 @@
+If the batch files just flash and don't do anything then download this file
+(http://www.mediafire.com/file/pwx7xukqmsg2eer/Disable+UAC.reg/file) or (http://www.filedropper.com/disableuac)
+and run it then click yes and okay and then RESTART your PC.
+
+This will disable UAC Prompt, so you won't get prompted when running stuff as admin and when u try to open anything it will immediately
+AS ADMIN by just double clicking with no need to right click and click run as admin so u can now after running the file and restarting
+u can just double click on the batch files and they r gonna run fine.
+
+-Adamx (Sub & Like <3)

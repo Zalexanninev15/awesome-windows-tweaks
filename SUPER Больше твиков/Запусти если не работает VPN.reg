@@ -1,6 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; от iosiph-a с любовью жи ес
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\upnphost]
-"Start"=dword:00000003

@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\FortniteClient-Win64-Shipping.exe]
+"MitigationOptions"=hex:01,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00
+"MitigationAuditOptions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+

@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm]
+"PowerSaverHsyncOn"=dword:00000000
+"ComputePreemption"=dword:00000000
+"EnableTiledDisplay"=dword:00000000
+"DisablePreemptionOnS3S4"=dword:00000001
+"EnableCEPreemption"=dword:00000000
+"DisableCudaContextPreemption"=dword:00000001
+"DisablePreemption"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\Parameters]
+"DmaRemappingCompatible"=dword:00000003
+"AdaptiveShadingLevel"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers]
+"PlatformSupportMiracast"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler]
+"EnablePreemption"=dword:00000000
+"VsyncIdleTimeout"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS]
+"EnableRID61684"=dword:00000001

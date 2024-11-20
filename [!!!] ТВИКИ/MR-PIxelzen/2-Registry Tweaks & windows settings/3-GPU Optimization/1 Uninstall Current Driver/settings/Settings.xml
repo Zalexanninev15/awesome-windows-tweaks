@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DisplayDriverUninstaller Version="18.0.3.4">
+	<Settings>
+		<SelectedLanguage>en-US</SelectedLanguage>
+		<RemoveMonitors>True</RemoveMonitors>
+		<RemoveCrimsonCache>True</RemoveCrimsonCache>
+		<RemoveAMDDirs>True</RemoveAMDDirs>
+		<RemoveAudioBus>True</RemoveAudioBus>
+		<RemoveAMDKMPFD>True</RemoveAMDKMPFD>
+		<RemoveNvidiaDirs>True</RemoveNvidiaDirs>
+		<RemovePhysX>True</RemovePhysX>
+		<Remove3DTVPlay>True</Remove3DTVPlay>
+		<RemoveGFE>True</RemoveGFE>
+		<RemoveNVCP>True</RemoveNVCP>
+		<RemoveINTELCP>True</RemoveINTELCP>
+		<RemoveAMDCP>True</RemoveAMDCP>
+		<UseRoamingConfig>False</UseRoamingConfig>
+		<CheckUpdates>False</CheckUpdates>
+		<CreateRestorePoint>True</CreateRestorePoint>
+		<SaveLogs>False</SaveLogs>
+		<RemoveVulkan>True</RemoveVulkan>
+		<ShowOffer>False</ShowOffer>
+		<EnableSafeModeDialog>False</EnableSafeModeDialog>
+		<PreventWinUpdate>True</PreventWinUpdate>
+		<UsedBCD>False</UsedBCD>
+	</Settings>
+</DisplayDriverUninstaller>

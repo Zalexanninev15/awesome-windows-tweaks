@@ -1,0 +1,13 @@
+-JoaoC
+First of all, he wants to give credit to the official server and the Revision team, Felipe and Catgamer
+https://sites.google.com/view/melodystweaks/home
+https://sites.google.com/view/meetrevision
+https://docs.google.com/document/d/1c2-lUJq74wuYK1WrA_bIvgb89dUN0sj8-hO3vqmrau4/edit
+
+<READ>
+
+I'm providing two .bats that involve system timers.
+Briefly, these commands set a specific timer related to your computer.
+Depending on the configuration, the result will be low latency, higher fps, stuttering, bsdos and others.
+So don't run any bcd you download out there.
+Try to understand each one by researching if possible, it's not that simple, but then you can find the ideal configuration for you.
