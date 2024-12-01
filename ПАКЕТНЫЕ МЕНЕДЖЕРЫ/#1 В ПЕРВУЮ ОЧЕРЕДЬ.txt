@@ -2,6 +2,13 @@
 Устанавливаем PowerShell 7 для работы скриптов:
 https://aka.ms/powershell-release?tag=stable
 Ищем окончание "-win-x64.msi" в Assets
+
+После установки рекомендуется: 
+Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+или
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+или
+Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned
 ~~~
 
 Устанавливаем scoop:

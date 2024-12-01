@@ -1,54 +1,66 @@
 @echo off
-pwsh -c ^
-$packagesMachine = @( ^
-    'Microsoft.PowerShell', ^
-    'DEVCOM.JetBrainsMonoNerdFont', ^
-    'Sandboxie.Plus', ^
-    'Microsoft.VCRedist.2015+.x86', ^
-    'Microsoft.VCRedist.2015+.x64', ^
-    'Microsoft.VCRedist.2010.x64', ^
-    'Microsoft.VCRedist.2012.x86', ^
-    'Microsoft.VCRedist.2005.x86', ^
-    'Microsoft.VCRedist.2008.x64', ^
-    'Microsoft.VCRedist.2008.x86', ^
-    'Microsoft.VCRedist.2005.x64', ^
-    'Microsoft.VCRedist.2013.x86', ^
-    'Microsoft.VCRedist.2010.x86', ^
-    'Microsoft.VCRedist.2012.x64', ^
-    'Microsoft.VCRedist.2013.x64', ^
-    'Rustlang.Rust.GNU', ^
-    'Microsoft.VisualStudio.2022.Community', ^
-    'Implbits.HashTab', ^
-    'chrisant996.Clink' ^
-); ^
-$packagesUser = @( ^
-    'Microsoft.PowerToys', ^
-    'lin-ycv.EverythingPowerToys', ^
-    'Microsoft.DevHome', ^
-    'DevToys-app.DevToys', ^
-	'qBittorrent.qBittorrent', ^
-    'Microsoft.Sysinternals.RDCMan', ^
-    'Microsoft.Sysinternals.ProcessMonitor', ^
-    'Microsoft.Sysinternals.Autoruns', ^
-    'Microsoft.Sysinternals.BGInfo', ^
-    'Microsoft.Sysinternals.ProcessExplorer', ^
-    'Microsoft.Sysinternals.TCPView', ^
-    'Microsoft.WindowsTerminal', ^
-    'AdrienAllard.FileConverter', ^
-    'calendulish.SteamToolsNG', ^
-    'Codeusa.SteamCleaner', ^
-    'TravisLane.SteamArtManager', ^
-    'StefansTools.SKTimeStamp', ^
-    'Ubisoft.Connect', ^
-    'GnuPG.Gpg4win', ^
-    'Proton.ProtonVPN', ^
-    'DuongDieuPhap.ImageGlass', ^
-    'Automattic.Simplenote' ^
-); ^
-foreach ($package in $packagesMachine) { ^
-    winget install --id=$package -e -h --scope 'machine' ^
-}; ^
-foreach ($package in $packagesUser) { ^
-    winget install --id=$package -e -h --scope 'user' ^
-}
+
+echo $packagesMachine = @( > install-machine-packages.ps1
+echo     'Microsoft.PowerShell', >> install-machine-packages.ps1
+echo     'Sandboxie.Plus', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2015+.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2015+.x64', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2010.x64', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2012.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2005.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2008.x64', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2008.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2005.x64', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2013.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2010.x86', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2012.x64', >> install-machine-packages.ps1
+echo     'Microsoft.VCRedist.2013.x64', >> install-machine-packages.ps1
+echo     'Rustlang.Rust.GNU', >> install-machine-packages.ps1
+echo     'Microsoft.VisualStudio.2022.Community', >> install-machine-packages.ps1
+echo     'Implbits.HashTab', >> install-machine-packages.ps1
+echo     'chrisant996.Clink' >> install-machine-packages.ps1
+echo ); >> install-machine-packages.ps1
+
+echo foreach ($package in $packagesMachine) { >> install-machine-packages.ps1
+echo     Write-Host "=> Package for machine: $package" >> install-machine-packages.ps1
+echo     winget install --id=$package -e -h --scope 'machine' >> install-machine-packages.ps1
+echo } >> install-machine-packages.ps1
+
+echo $packagesUser = @( > install-user-packages.ps1
+echo     'DEVCOM.JetBrainsMonoNerdFont', >> install-user-packages.ps1
+echo     'Microsoft.PowerToys', >> install-user-packages.ps1
+echo     'lin-ycv.EverythingPowerToys', >> install-user-packages.ps1
+echo     'Microsoft.DevHome', >> install-user-packages.ps1
+echo     'DevToys-app.DevToys', >> install-user-packages.ps1
+echo     'qBittorrent.qBittorrent', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.RDCMan', >> install-user-packages.ps1
+echo     'WinsiderSS.SystemInformer', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.ProcessMonitor', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.Autoruns', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.BGInfo', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.ProcessExplorer', >> install-user-packages.ps1
+echo     'Microsoft.Sysinternals.TCPView', >> install-user-packages.ps1
+echo     'Microsoft.WindowsTerminal', >> install-user-packages.ps1
+echo     'AdrienAllard.FileConverter', >> install-user-packages.ps1
+echo     'calendulish.SteamToolsNG', >> install-user-packages.ps1
+echo     'Codeusa.SteamCleaner', >> install-user-packages.ps1
+echo     'TravisLane.SteamArtManager', >> install-user-packages.ps1
+echo     'StefansTools.SKTimeStamp', >> install-user-packages.ps1
+echo     'Ubisoft.Connect', >> install-user-packages.ps1
+echo     'GnuPG.Gpg4win', >> install-user-packages.ps1
+echo     'Proton.ProtonVPN', >> install-user-packages.ps1
+echo     'DuongDieuPhap.ImageGlass', >> install-user-packages.ps1
+echo     'Automattic.Simplenote' >> install-user-packages.ps1
+echo ); >> install-user-packages.ps1
+
+echo foreach ($package in $packagesUser) { >> install-user-packages.ps1
+echo     Write-Host "=> Package for user: $package" >> install-user-packages.ps1
+echo     winget install --id=$package -e -h --scope 'user' >> install-user-packages.ps1
+echo } >> install-user-packages.ps1
+
+pwsh -ExecutionPolicy Bypass -File install-machine-packages.ps1
+pwsh -ExecutionPolicy Bypass -File install-user-packages.ps1
+
+del install-machine-packages.ps1
+del install-user-packages.ps1
 pause
