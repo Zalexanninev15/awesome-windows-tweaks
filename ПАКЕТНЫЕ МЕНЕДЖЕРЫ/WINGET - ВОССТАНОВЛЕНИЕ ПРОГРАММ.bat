@@ -1,4 +1,11 @@
 @echo off
+powershell -NoProfile -ExecutionPolicy Bypass -Command "if (-Not ([Security.Principal.WindowsPrincipal]([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) { exit 1 } else { exit 0 }"
+
+if %errorlevel% equ 1 (
+    echo Run as Administrator!
+    pause
+	exit
+)
 
 echo $packagesMachine = @( > install-machine-packages.ps1
 echo     'Microsoft.PowerShell', >> install-machine-packages.ps1
@@ -80,9 +87,11 @@ echo     Write-Host "=> Package for user: $package" >> install-user-packages.ps1
 echo     winget install --id=$package -e -h --scope 'user' >> install-user-packages.ps1
 echo } >> install-user-packages.ps1
 
-pwsh -ExecutionPolicy Bypass -File install-machine-packages.ps1
-pwsh -ExecutionPolicy Bypass -File install-user-packages.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File install-machine-packages.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File install-user-packages.ps1
 
-del install-machine-packages.ps1
-del install-user-packages.ps1
+del install-machine-packages.ps1 /q /f
+del install-user-packages.ps1 /q /f
+
 pause
+exit /b

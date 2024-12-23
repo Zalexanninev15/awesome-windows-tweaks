@@ -1,4 +1,11 @@
 @echo off
+powershell -NoProfile -ExecutionPolicy Bypass -Command "if (-Not ([Security.Principal.WindowsPrincipal]([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) { exit 1 } else { exit 0 }"
+
+if %errorlevel% equ 1 (
+    echo Run as Administrator!
+    pause
+	exit
+)
 
 echo Setting up the scoop
 pwsh -CommandWithArgs "scoop install git"
@@ -74,7 +81,9 @@ echo     Write-Host "=> Package: $package" >> install-packages.ps1
 echo     scoop install $package >> install-packages.ps1
 echo } >> install-packages.ps1
 
-pwsh -ExecutionPolicy Bypass -File install-packages.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File install-packages.ps1
 
-del install-packages.ps1
+del install-packages.ps1 /q /f
+
 pause
+exit /b

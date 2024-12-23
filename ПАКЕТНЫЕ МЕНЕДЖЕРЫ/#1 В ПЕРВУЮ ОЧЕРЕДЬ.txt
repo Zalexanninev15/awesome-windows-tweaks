@@ -1,9 +1,5 @@
 ~~~ В ПЕРВУЮ ОЧЕРЕДЬ ~~~
-Устанавливаем PowerShell 7 для работы скриптов:
-https://aka.ms/powershell-release?tag=stable
-Ищем окончание "-win-x64.msi" в Assets
-
-После установки рекомендуется: 
+Необходимо разрешить запуск PowerShell скриптов: 
 Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 или
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
@@ -20,5 +16,3 @@ https://pyatilistnik.org/install-winget-windows-package-manager/
 
 Для всех пакетных менеджеров: https://github.com/marticliment/UniGetUI
 Через WinGet: winget install --exact --id SomePythonThings.WingetUIStore --source winget
-
-ВСЕ BAT-СКРИПТЫ ЗАПУСКАТЬ СТРОГО ОТ АДМИНИСТРАТОРА!!!
