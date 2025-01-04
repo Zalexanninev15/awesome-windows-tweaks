@@ -70,7 +70,6 @@ echo     'HydraLauncher.Hydra', >> install-user-packages.ps1
 echo     'calendulish.SteamToolsNG', >> install-user-packages.ps1
 echo     'Insomnia.Insomnia, >> install-user-packages.ps1
 echo     'Codeusa.SteamCleaner', >> install-user-packages.ps1
-echo     'GOG.Galaxy', >> install-user-packages.ps1
 echo     'TravisLane.SteamArtManager', >> install-user-packages.ps1
 echo     'StefansTools.SKTimeStamp', >> install-user-packages.ps1
 echo     'Ubisoft.Connect', >> install-user-packages.ps1
