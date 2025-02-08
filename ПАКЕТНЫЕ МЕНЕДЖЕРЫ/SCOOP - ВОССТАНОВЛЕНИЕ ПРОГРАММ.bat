@@ -18,6 +18,7 @@ pwsh -CommandWithArgs "scoop bucket add versions"
 echo $packages = @( > install-packages.ps1
 echo     'adb', >> install-packages.ps1
 echo     'far', >> install-packages.ps1
+echo     'aria2', >> install-packages.ps1
 echo     'vivaldi', >> install-packages.ps1
 echo     'apktool', >> install-packages.ps1
 echo     'cacert', >> install-packages.ps1

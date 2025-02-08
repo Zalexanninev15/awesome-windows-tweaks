@@ -49,7 +49,6 @@ echo $packagesUser = @( > install-user-packages.ps1
 echo     'DEVCOM.JetBrainsMonoNerdFont', >> install-user-packages.ps1
 echo     'Microsoft.PowerToys', >> install-user-packages.ps1
 echo     'lin-ycv.EverythingPowerToys', >> install-user-packages.ps1
-echo     'Microsoft.DevHome', >> install-user-packages.ps1
 echo     'DevToys-app.DevToys', >> install-user-packages.ps1
 echo     'qBittorrent.qBittorrent', >> install-user-packages.ps1
 echo     'WinsiderSS.SystemInformer', >> install-user-packages.ps1
@@ -57,11 +56,11 @@ echo     'Microsoft.Sysinternals.RDCMan', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.RDCMan', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.ProcessMonitor', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.Autoruns', >> install-user-packages.ps1
+echo     'Microsoft.DevHome', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.BGInfo', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.ProcessExplorer', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.TCPView', >> install-user-packages.ps1
 echo     'Microsoft.WindowsTerminal', >> install-user-packages.ps1
-echo     'Proton.ProtonVPN', >> install-user-packages.ps1
 echo     'Windscribe.Windscribe', >> install-user-packages.ps1
 echo     'Cyotek.WebCopy', >> install-user-packages.ps1
 echo     'dev47apps.DroidCam', >> install-user-packages.ps1
@@ -74,7 +73,7 @@ echo     'TravisLane.SteamArtManager', >> install-user-packages.ps1
 echo     'StefansTools.SKTimeStamp', >> install-user-packages.ps1
 echo     'Ubisoft.Connect', >> install-user-packages.ps1
 echo     'GnuPG.Gpg4win', >> install-user-packages.ps1
-echo     'Python.Python.3.13', >> install-user-packages.ps1
+echo     'ArduinoSA.IDE.stable', >> install-user-packages.ps1
 echo     'Flydigi.FlydigiSpaceStation', >> install-user-packages.ps1
 echo     'DuongDieuPhap.ImageGlass', >> install-user-packages.ps1
 echo     'Automattic.Simplenote' >> install-user-packages.ps1
