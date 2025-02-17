@@ -1,7 +1,15 @@
 @echo off
-pwsh -CommandWithArgs "scoop update"
-pwsh -CommandWithArgs "scoop list | foreach { scoop update $_.Name }"
-pwsh -CommandWithArgs "winget upgrade --all"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "if (-Not ([Security.Principal.WindowsPrincipal]([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) { exit 1 } else { exit 0 }"
 
-pwsh -CommandWithArgs "scoop list | foreach { scoop cleanup $_.Name }"
+if %errorlevel% equ 1 (
+    echo Run as Administrator!
+    pause
+	exit
+)
+
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop update"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop list | foreach { scoop update $_.Name }"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "winget upgrade --all"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop list | foreach { scoop cleanup $_.Name }"
 pause
+exit /b
