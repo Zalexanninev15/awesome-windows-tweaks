@@ -19,8 +19,8 @@ if (!(Test-Path -Path $FilePath -PathType Container)) {
 $DownloadPath = "$FilePath\mtc_tools.zip"
 
 Invoke-WebRequest -Uri $DownloadURL -OutFile $DownloadPath
-
 Expand-Archive -Path $DownloadPath -DestinationPath $FilePath -Force
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy -Scope LocalMachine Unrestricted -Force"
 
 $mtcScriptCDD = "$FilePath\CleanDriversDuplicates.ps1"
 
