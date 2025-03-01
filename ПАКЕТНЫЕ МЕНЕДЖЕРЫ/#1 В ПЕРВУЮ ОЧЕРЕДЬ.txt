@@ -9,6 +9,8 @@ Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned
 
 Устанавливаем scoop:
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+Отключаем использование aria2c:
+scoop config aria2-enabled false
 
 Информация про WinGet + установка, если отсутствует: 
 https://winitpro.ru/index.php/2020/08/11/menedzher-paketov-winget-windows/
