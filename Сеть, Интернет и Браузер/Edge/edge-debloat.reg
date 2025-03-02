@@ -1,6 +1,7 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"HideFirstRunExperience"=dword:00000001
 "SearchInSidebarEnabled"=dword:00000002
 "HubsSidebarEnabled"=dword:00000000
 "ReadAloudEnabled"=dword:00000000
@@ -20,14 +21,12 @@ Windows Registry Editor Version 5.00
 "EdgeWorkspacesEnabled"=dword:00000000
 "EdgeWalletCheckoutEnabled"=dword:00000000
 "EdgeWalletEtreeEnabled"=dword:00000000
-"HideFirstRunExperience"=dword:00000000
 "BuiltInDnsClientEnabled"=dword:00000000
 "AADWebSiteSSOUsingThisProfileEnabled"=dword:00000000
 "AccessibilityImageLabelsEnabled"=dword:00000000
 "AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000
 "AllowGamesMenu"=dword:00000000
 "AutomaticHttpsDefault"=dword:00000002
-"BackgroundModeEnabled"=dword:00000000
 "BrowserAddProfileEnabled"=dword:00000000
 "BrowserGuestModeEnabled"=dword:00000000
 "ComposeInlineEnabled"=dword:00000000
@@ -49,7 +48,6 @@ Windows Registry Editor Version 5.00
 "MicrosoftEditorSynonymsEnabled"=dword:00000000
 "MicrosoftEditorProofingEnabled"=dword:00000000
 "RelatedWebsiteSetsEnabled"=dword:00000000
-"MouseGestureEnabled"=dword:00000000
 "PaymentMethodQueryEnabled"=dword:00000000
 "PinningWizardAllowed"=dword:00000000
 "PromotionalTabsEnabled"=dword:00000000
@@ -99,9 +97,7 @@ Windows Registry Editor Version 5.00
 "UserFeedbackAllowed"=dword:00000000
 "WebWidgetAllowed"=dword:00000000
 "TyposquattingCheckerEnabled"=dword:00000000
-"TrackingPrevention"=dword:00000002
-"StartupBoostEnabled"=dword:00000001
-"SleepingTabsEnabled"=dword:00000000
+"TrackingPrevention"=dword:00000003
 "SigninInterceptionEnabled"=dword:00000000
 "SideSearchEnabled"=dword:00000000
 "ShowPDFDefaultRecommendationsEnabled"=dword:00000000
@@ -114,14 +110,11 @@ Windows Registry Editor Version 5.00
 "PasswordLeakDetectionEnabled"=dword:00000000
 "MAMEnabled"=dword:00000000
 "HighEfficiencyModeEnabled"=dword:00000000
-"GoogleSearchSidePanelEnabled"=dword:00000000
-"EfficiencyModeEnabled"=dword:00000000
 "EdgeManagementEnabled"=dword:00000000
 "DesktopSharingHubEnabled"=dword:00000000
 "CopilotPageContextEnabled"=dword:00000000
 "ProactiveAuthWorkflowEnabled"=dword:00000000
 "CopilotPageContext"=dword:00000000
-"CopilotCDPPageContext"=dword:00000000
 "NewTabPageContentEnabled"=dword:00000000
 "NewTabPageAppLauncherEnabled"=dword:00000000
 "NewTabPageBingChatEnabled"=dword:00000000
@@ -131,3 +124,15 @@ Windows Registry Editor Version 5.00
 "SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000
 "ApplicationGuardFavoritesSyncEnabled"=dword:00000000
 "ApplicationGuardTrafficIdentificationEnabled"=dword:00000000
+"WebToBrowserSignInEnabled"=dword:00000000
+"SeamlessWebToBrowserSignInEnabled"=dword:00000000
+"EdgeAutofillMlEnabled"=dword:00000000
+"GenAILocalFoundationalModelSettings"=dword:00000001
+"PersonalizeTopSitesInCustomizeSidebarEnabled"=dword:00000000
+"ExtensionsPerformanceDetectorEnabled"=dword:00000000
+"PerformanceDetectorEnabled"=dword:00000000
+"EdgeEntraCopilotPageContext"=dword:00000000
+"MouseGestureEnabled"=dword:00000000
+"DisableScreenshots"=dword:00000000
+"WebCaptureEnabled"=dword:00000000
+"SpellcheckEnabled"=dword:00000000
