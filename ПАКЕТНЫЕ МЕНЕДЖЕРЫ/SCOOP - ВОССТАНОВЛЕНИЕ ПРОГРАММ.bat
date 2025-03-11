@@ -8,12 +8,12 @@ if %errorlevel% equ 1 (
 )
 
 echo Setting up the scoop
-pwsh -CommandWithArgs "scoop install git"
-pwsh -CommandWithArgs "scoop bucket add main"
-pwsh -CommandWithArgs "scoop bucket add games"
-pwsh -CommandWithArgs "scoop bucket add nonportable"
-pwsh -CommandWithArgs "scoop bucket add extras"
-pwsh -CommandWithArgs "scoop bucket add versions"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop install git"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop bucket add main"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop bucket add games"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop bucket add nonportable"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop bucket add extras"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop bucket add versions"
 
 echo $packages = @( > install-packages.ps1
 echo     'aria2', >> install-packages.ps1
@@ -36,7 +36,6 @@ echo     'dnspyex', >> install-packages.ps1
 echo     'fastfetch', >> install-packages.ps1
 echo     'hugo-extended', >> install-packages.ps1
 echo     'hokus', >> install-packages.ps1
-echo     'simplewall', >> install-packages.ps1
 echo     'ffmpeg', >> install-packages.ps1
 echo     'github', >> install-packages.ps1
 echo     'gpg', >> install-packages.ps1
@@ -54,7 +53,6 @@ echo     'wireshark', >> install-packages.ps1
 echo     'minisign', >> install-packages.ps1
 echo     'nextcloud', >> install-packages.ps1
 echo     'nmap', >> install-packages.ps1
-echo     'cygwin', >> install-packages.ps1
 echo     'oh-my-posh', >> install-packages.ps1
 echo     'painter', >> install-packages.ps1
 echo     'pycharm', >> install-packages.ps1

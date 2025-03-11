@@ -7,6 +7,6 @@ if %errorlevel% equ 1 (
 	exit
 )
 
-powershell -CommandWithArgs "scoop list | foreach { scoop cleanup $_.Name }"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "scoop list | foreach { scoop cleanup $_.Name }"
 pause
 exit /b

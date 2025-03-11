@@ -33,12 +33,12 @@ echo     'IObit.IObitUnlocker', >> install-machine-packages.ps1
 echo     'EliasFotinis.DeskPins', >> install-machine-packages.ps1
 echo     'Guru3D.Afterburner', >> install-machine-packages.ps1
 echo     'Guru3D.RTSS', >> install-machine-packages.ps1
-echo     'chrisant996.Clink' >> install-machine-packages.ps1
-echo     'Canonical.Ubuntu.2404' >> install-machine-packages.ps1
-echo     'Canonical.Ubuntu.2204' >> install-machine-packages.ps1
-echo     'OffSec.KaliLinux' >> install-machine-packages.ps1
-echo     'Microsoft.DevHome' >> install-machine-packages.ps1
-echo     'DEVCOM.JetBrainsMonoNerdFont', >> install-machine-packages.ps1
+echo     'chrisant996.Clink', >> install-machine-packages.ps1
+echo     'Canonical.Ubuntu.2404', >> install-machine-packages.ps1
+echo     'Canonical.Ubuntu.2204', >> install-machine-packages.ps1
+echo     'OffSec.KaliLinux', >> install-machine-packages.ps1
+echo     'Microsoft.DevHome', >> install-machine-packages.ps1
+echo     'DEVCOM.JetBrainsMonoNerdFont' >> install-machine-packages.ps1
 echo ); >> install-machine-packages.ps1
 
 echo foreach ($package in $packagesMachine) { >> install-machine-packages.ps1
@@ -52,6 +52,7 @@ echo     'Microsoft.PowerToys', >> install-user-packages.ps1
 echo     'lin-ycv.EverythingPowerToys', >> install-user-packages.ps1
 echo     'DevToys-app.DevToys', >> install-user-packages.ps1
 echo     'qBittorrent.qBittorrent', >> install-user-packages.ps1
+echo     'JetBrains.Toolbox', >> install-user-packages.ps1
 echo     'WinsiderSS.SystemInformer', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.RDCMan', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.RDCMan', >> install-user-packages.ps1
@@ -83,7 +84,7 @@ echo     'GnuPG.Gpg4win', >> install-user-packages.ps1
 echo     'ArduinoSA.IDE.stable', >> install-user-packages.ps1
 echo     'Flydigi.FlydigiSpaceStation', >> install-user-packages.ps1
 echo     'DuongDieuPhap.ImageGlass', >> install-user-packages.ps1
-echo     'Automattic.Simplenote' >> install-user-packages.ps1
+echo     'Automattic.Simplenote', >> install-user-packages.ps1
 echo     'Anthropic.Claude' >> install-user-packages.ps1
 echo ); >> install-user-packages.ps1
 
