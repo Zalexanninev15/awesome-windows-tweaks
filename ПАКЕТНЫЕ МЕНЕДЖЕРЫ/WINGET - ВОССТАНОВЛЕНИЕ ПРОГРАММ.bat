@@ -38,6 +38,7 @@ echo     'Canonical.Ubuntu.2404' >> install-machine-packages.ps1
 echo     'Canonical.Ubuntu.2204' >> install-machine-packages.ps1
 echo     'OffSec.KaliLinux' >> install-machine-packages.ps1
 echo     'Microsoft.DevHome' >> install-machine-packages.ps1
+echo     'DEVCOM.JetBrainsMonoNerdFont', >> install-machine-packages.ps1
 echo ); >> install-machine-packages.ps1
 
 echo foreach ($package in $packagesMachine) { >> install-machine-packages.ps1
@@ -46,7 +47,7 @@ echo     winget install --id=$package -e -h --scope 'machine' >> install-machine
 echo } >> install-machine-packages.ps1
 
 echo $packagesUser = @( > install-user-packages.ps1
-echo     'DEVCOM.JetBrainsMonoNerdFont', >> install-user-packages.ps1
+
 echo     'Microsoft.PowerToys', >> install-user-packages.ps1
 echo     'lin-ycv.EverythingPowerToys', >> install-user-packages.ps1
 echo     'DevToys-app.DevToys', >> install-user-packages.ps1
@@ -61,17 +62,23 @@ echo     'Microsoft.Sysinternals.BGInfo', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.ProcessExplorer', >> install-user-packages.ps1
 echo     'Microsoft.Sysinternals.TCPView', >> install-user-packages.ps1
 echo     'Microsoft.WindowsTerminal', >> install-user-packages.ps1
-echo     'Windscribe.Windscribe', >> install-user-packages.ps1
+echo     'Proton.ProtonVPN', >> install-user-packages.ps1
+echo     'Cloudflare.Warp', >> install-user-packages.ps1
 echo     'Cyotek.WebCopy', >> install-user-packages.ps1
+echo     'ElementLabs.LMStudio', >> install-user-packages.ps1
+echo     'Anysphere.Cursor', >> install-user-packages.ps1
 echo     'dev47apps.DroidCam', >> install-user-packages.ps1
 echo     'AdrienAllard.FileConverter', >> install-user-packages.ps1
 echo     'HydraLauncher.Hydra', >> install-user-packages.ps1
+echo     'Zen-Team.Zen-Browser', >> install-user-packages.ps1
+echo     'chen08209.FlClash', >> install-user-packages.ps1
 echo     'calendulish.SteamToolsNG', >> install-user-packages.ps1
 echo     'Insomnia.Insomnia, >> install-user-packages.ps1
+echo     'GOG.Galaxy', >> install-user-packages.ps1
 echo     'Codeusa.SteamCleaner', >> install-user-packages.ps1
+echo     'EpicGames.EpicGamesLauncher', >> install-user-packages.ps1
 echo     'TravisLane.SteamArtManager', >> install-user-packages.ps1
 echo     'StefansTools.SKTimeStamp', >> install-user-packages.ps1
-echo     'Ubisoft.Connect', >> install-user-packages.ps1
 echo     'GnuPG.Gpg4win', >> install-user-packages.ps1
 echo     'ArduinoSA.IDE.stable', >> install-user-packages.ps1
 echo     'Flydigi.FlydigiSpaceStation', >> install-user-packages.ps1

@@ -16,8 +16,6 @@ pwsh -CommandWithArgs "scoop bucket add extras"
 pwsh -CommandWithArgs "scoop bucket add versions"
 
 echo $packages = @( > install-packages.ps1
-echo     'adb', >> install-packages.ps1
-echo     'far', >> install-packages.ps1
 echo     'aria2', >> install-packages.ps1
 echo     'vivaldi', >> install-packages.ps1
 echo     'apktool', >> install-packages.ps1
@@ -32,7 +30,6 @@ echo     'cowsay', >> install-packages.ps1
 echo     'privacy.sexy', >> install-packages.ps1
 echo     'handbrake', >> install-packages.ps1
 echo     'cpufetch', >> install-packages.ps1
-echo     'cygwin', >> install-packages.ps1
 echo     'dark', >> install-packages.ps1
 echo     'devd', >> install-packages.ps1
 echo     'dnspyex', >> install-packages.ps1
@@ -44,7 +41,6 @@ echo     'ffmpeg', >> install-packages.ps1
 echo     'github', >> install-packages.ps1
 echo     'gpg', >> install-packages.ps1
 echo     'exiftool', >> install-packages.ps1
-echo     'epic-games-launcher', >> install-packages.ps1
 echo     'grep', >> install-packages.ps1
 echo     'hashcheck', >> install-packages.ps1
 echo     'obsidian', >> install-packages.ps1
@@ -52,13 +48,13 @@ echo     'heroic-games-launcher', >> install-packages.ps1
 echo     'jcpicker', >> install-packages.ps1
 echo     'kryptor', >> install-packages.ps1
 echo     'masscode', >> install-packages.ps1
-echo     'mc', >> install-packages.ps1
 echo     'micro', >> install-packages.ps1
 echo     'mingw', >> install-packages.ps1
 echo     'wireshark', >> install-packages.ps1
 echo     'minisign', >> install-packages.ps1
 echo     'nextcloud', >> install-packages.ps1
 echo     'nmap', >> install-packages.ps1
+echo     'cygwin', >> install-packages.ps1
 echo     'oh-my-posh', >> install-packages.ps1
 echo     'painter', >> install-packages.ps1
 echo     'pycharm', >> install-packages.ps1
@@ -75,6 +71,7 @@ echo     'wget', >> install-packages.ps1
 echo     'windhawk', >> install-packages.ps1
 echo     'z', >> install-packages.ps1
 echo     'docker' >> install-packages.ps1
+echo     'docker-compose' >> install-packages.ps1
 echo ); >> install-packages.ps1
 
 echo foreach ($package in $packages) { >> install-packages.ps1
