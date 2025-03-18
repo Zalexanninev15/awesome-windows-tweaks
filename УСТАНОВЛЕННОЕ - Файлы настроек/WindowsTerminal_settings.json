@@ -9,18 +9,11 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.paste"
         },
         {
             "command": 
@@ -29,14 +22,36 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         }
     ],
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "keybindings": 
+    [
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -56,12 +71,13 @@
         },
         "list": 
         [
-			{
+            {
+                "colorScheme": "Dark+",
                 "elevate": true,
                 "font": 
                 {
                     "face": "JetBrains Mono",
-                    "size": 10
+                    "size": 11
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -70,22 +86,24 @@
             },
             {
                 "bellStyle": "none",
+                "colorScheme": "Ubuntu-ColorScheme",
+                "font": 
+                {
+                    "face": "JetBrains Mono",
+                    "size": 11
+                },
                 "guid": "{963ff2f7-6aed-5ce3-9d91-90d99571f53a}",
                 "hidden": false,
                 "name": "Ubuntu-24.04",
-                "source": "Windows.Terminal.Wsl",
-				 "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 10
-                }
+                "source": "Windows.Terminal.Wsl"
             },
-			{
+            {
+                "colorScheme": "Ottosson",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "font": 
                 {
                     "face": "JetBrains Mono",
-                    "size": 10
+                    "size": 11
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
@@ -93,55 +111,52 @@
                 "tabTitle": "CMD"
             },
             {
+                "colorScheme": "Ubuntu-ColorScheme",
+                "font": 
+                {
+                    "face": "JetBrains Mono",
+                    "size": 11
+                },
                 "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
                 "hidden": false,
                 "name": "Ubuntu-22.04",
-                "source": "Windows.Terminal.Wsl",
-				 "font": 
-                {
-                    "face": "JetBrains Mono",
-                    "size": 10
-                }
+                "source": "Windows.Terminal.Wsl"
             },
             {
+                "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "font": 
                 {
                     "face": "JetBrains Mono",
-                    "size": 10
+                    "size": 11
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "PowerShell Legacy"
+            },
+            {
+                "colorScheme": "Dark+",
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "colorScheme": "Campbell",
+                "guid": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
+                "hidden": false,
+                "name": "PowerShell (scoop)",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{d8e96812-b789-5068-a5ae-10b2fb53e95f}",
+                "hidden": false,
+                "name": "Ubuntu 24.04.1 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu24.04LTS_79rhkp1fndgsc"
             }
         ]
     },
-    "schemes": 
-    [
-        {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        }
-    ],
+    "schemes": [],
     "tabWidthMode": "titleLength",
     "themes": [],
     "useAcrylicInTabRow": false
