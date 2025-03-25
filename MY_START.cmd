@@ -46,6 +46,8 @@ reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "C
 ::reg add "HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response" /v "AutoRepeatDelay" /t REG_SZ /d 0 /f
 ::reg add "HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response" /v "Flags" /t REG_SZ /d 122 /f
 
+bcdedit /set hypervisorlaunchtype off
+
 sc config xbgm start= disabled
 sc config XblAuthManager start= disabled
 sc config XblGameSave start= disabled
