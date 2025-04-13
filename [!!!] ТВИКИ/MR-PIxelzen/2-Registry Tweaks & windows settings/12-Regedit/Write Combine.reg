@@ -1,4 +1,0 @@
-Windows Registry Editor Version 5.00		by KHYX
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"WriteCombineEnable"=dword:00000001

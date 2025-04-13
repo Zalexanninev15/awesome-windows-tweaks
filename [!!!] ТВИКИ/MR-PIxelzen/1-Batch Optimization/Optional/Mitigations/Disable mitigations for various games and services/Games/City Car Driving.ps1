@@ -1,1 +1,0 @@
-Set-ProcessMitigation -PolicyFilePath "XML/City Car Driving.xml"

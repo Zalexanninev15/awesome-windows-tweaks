@@ -1,8 +1,0 @@
-Windows Registry Editor Version 5.00
-
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppBroadcast\GlobalSettings]
-"AudioCaptureEnabled"=dword:00000000
-"MicrophoneCaptureEnabledByDefault"=dword:00000000
-"CursorCaptureEnabled"=dword:00000000
-"CameraCaptureEnabledByDefault"=dword:00000000

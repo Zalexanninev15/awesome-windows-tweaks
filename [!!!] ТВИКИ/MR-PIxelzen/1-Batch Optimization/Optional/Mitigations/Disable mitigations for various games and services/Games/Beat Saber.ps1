@@ -1,1 +1,0 @@
-Set-ProcessMitigation -PolicyFilePath "XML/Beat Saber.xml"

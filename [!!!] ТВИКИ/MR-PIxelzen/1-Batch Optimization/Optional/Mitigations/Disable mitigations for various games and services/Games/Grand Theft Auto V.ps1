@@ -1,1 +1,0 @@
-Set-ProcessMitigation -PolicyFilePath "XML/Grand Theft Auto V.xml"

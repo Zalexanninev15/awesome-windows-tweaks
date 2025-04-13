@@ -1,1 +1,0 @@
-Set-ProcessMitigation -PolicyFilePath "XML/Zenith The Last City.xml"

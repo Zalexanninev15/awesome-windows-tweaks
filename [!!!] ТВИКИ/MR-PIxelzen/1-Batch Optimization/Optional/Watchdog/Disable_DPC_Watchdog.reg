@@ -1,6 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
-"DpcWatchdogProfileOffset"=dword:00000000
-"DpcTimeout"=dword:00000000
-"DpcWatchdogPeriod"=dword:00000000

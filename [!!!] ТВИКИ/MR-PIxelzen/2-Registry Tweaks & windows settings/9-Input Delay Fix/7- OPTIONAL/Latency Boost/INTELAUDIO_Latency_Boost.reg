@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\INTELAUDIO\FUNC_01&VEN_10EC&DEV_0298&SUBSYS_10EC1072]
-@="devcon deaktiviert"
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\INTELAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101]
-@="devcon deaktiviert"
