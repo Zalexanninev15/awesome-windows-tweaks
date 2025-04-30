@@ -7,5 +7,5 @@ if %errorlevel% equ 1 (
 	exit
 )
 
-powershell -c "irm https://clcr.me/slimbrave | iex"
+powershell -c "irm https://raw.githubusercontent.com/ltx0101/SlimBrave/main/SlimBrave.ps1 | iex"
 exit /b

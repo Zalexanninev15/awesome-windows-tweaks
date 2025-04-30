@@ -22,16 +22,6 @@
 > Представляют вашему вниманию собственную сборку Cent браузера для Live-систем (WinPE 7/8/8.1/10/11 x64), как временное решение, а может и на постоянной основе. Да и вообще данная сборка крайне оптимизированная, вышло очень хорошо.
 > Я лично использую такую сборку в [WinPE от Сергея](https://sergeistrelec.name/), в качестве "быстрого браузера", а также на постоянной основе (до 2025 года), т.к. браузер скоростной и имеет кучу плюшек. Отличий от оригинального браузера много, особенно в плане специфичных настроек.
 
-Доступ пока только на Boosty (извиняюсь, но если хотите – можете скинуть на покушать 🌯), первая версия Cent TEMP появится уже в этом году в репозитории.
-
-Все версии сборки:
-
-- [Cent TEMP v1.3](https://boosty.to/zalexanninev15/posts/a5b6fc0d-1f01-4867-96bc-742977aea786?share=post_link)
-- [Cent TEMP v1.2](https://boosty.to/zalexanninev15/posts/868df7e6-f384-4fa4-bd7c-c8a5b3e08822?share=post_link)
-- [Cent TEMP v1.1](https://boosty.to/zalexanninev15/posts/7fbbc301-1f83-4f4c-bd77-07a3152dfbce?share=post_link)
-- [Cent TEMP v1.1](https://boosty.to/zalexanninev15/posts/7fbbc301-1f83-4f4c-bd77-07a3152dfbce?share=post_link)
-- [Cent TEMP v1.0 + v1.01](https://boosty.to/zalexanninev15/posts/d946393f-c82f-49c1-9a17-885bacd5e552?share=post_link)
-
 2. [Z15-OperaCustomInstaller_2024.exe](https://github.com/Zalexanninev15/awesome-windows-tweaks/raw/refs/heads/main/%D0%A1%D0%B5%D1%82%D1%8C,%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%20%D0%B8%20%D0%91%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80/Z15-OperaCustomInstaller_2024.exe) — моя сборка установщика стандартного браузера Opera на базе SFX-архива с аргументами для отключения сбора данных и их отправки ещё до первого запуска браузера, убирание рекламы и закрепления браузера на панели задач, отключение персонализированного контента. Сборка создана для личных нужд, но я всё равно не рекомендую использовать оперу где-либо.
 
 ```batch

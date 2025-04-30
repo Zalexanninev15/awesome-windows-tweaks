@@ -1,4 +1,4 @@
-# Введите команду в PowerShell от имени Администратора: irm https://clcr.me/mtc | iex
+# Введите команду в PowerShell от имени Администратора: irm bit.ly/mtc-web | iex
 # Подробнее про данный скрипт: https://t.me/maxlife15/1678
 
 $mtc_version = "11"
@@ -25,8 +25,25 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "Set-ExecutionPolicy -Sco
 $mtcScriptCDD = "$FilePath\CleanDriversDuplicates.ps1"
 
 if (Test-Path -Path $mtcScriptCDD) {
-    $scriptProcess = Start-Process -FilePath "powershell.exe" -ArgumentList "-Command", "`"$mtcScriptCDD`"" -PassThru
-    $scriptProcess.WaitForExit()
+    $userInput = Read-Host "Do you wish to clean up driver duplicates? (the process may take a long time) (y/n)"
+    $userInput = $userInput.Trim().ToLower()
+
+    $yesAnswers = @('y', 'yes', 'да')
+    $noAnswers = @('n', 'no', 'нет')
+
+    if ([string]::IsNullOrEmpty($userInput)) {
+        Write-Host "No input detected. Script will not be run."
+    }
+    elseif ($yesAnswers -contains $userInput) {
+        $scriptProcess = Start-Process -FilePath "powershell.exe" -ArgumentList "-Command", "`"$mtcScriptCDD`"" -PassThru
+        $scriptProcess.WaitForExit()
+    }
+    elseif ($noAnswers -contains $userInput) {
+        Write-Host "Script execution cancelled by user."
+    }
+    else {
+        Write-Host "Invalid input. Script will not be run."
+    }
 } else {
     Write-Error "The script file '$mtcScriptCDD' was not found."
 }
